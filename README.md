@@ -8,7 +8,9 @@ Repo para armazenar os resumos e estudos para certificação aws
 - Acessar o menu lateral Orcamentos/Budgets
 - Criar alertas simples ou completos no valor desejado e enviar por email
 
-## Passo3: Regiões
+## Passo 3: 
+
+## Passo 4: Regiões
 * [us]-[east]-[2] = Ohio
   - Ohio = nome da Região
   - us = localização do continente
