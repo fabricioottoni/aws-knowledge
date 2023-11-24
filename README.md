@@ -10,8 +10,8 @@ Repo para armazenar os resumos e estudos para certificação aws
 
 ## Passo3: Regiões
 - [US]-[east]-[2] = Ohio
--- Ohio = nome da Região
--- US = localização do continente
--- east = direção dentro do continente
--- 2 = quantidade de data centers dentro daquela região
+ - Ohio = nome da Região
+ - US = localização do continente
+ - east = direção dentro do continente
+ - 2 = quantidade de data centers dentro daquela região
 
