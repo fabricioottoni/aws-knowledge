@@ -28,8 +28,7 @@ Repo para armazenar os resumos e estudos para certificação aws
 * ZL = Data centers menores conectados às zonas de disponibilidade e mais próximos dos usuários finais
 
 ## Passo 7: Wavelength
-* É a infraestrutura da AWS dentro das operadoras de telefonia para que a comunicação com os data centers da AWS seja a mais rápida
-
+* O AWS Wavelength incorpora serviços de computação e armazenamento da AWS em redes 5G, fornecendo infraestrutura de computação de borda móvel para desenvolvimento, implantação e escalabilidade de aplicações de latência ultrabaixa
 
 
 
