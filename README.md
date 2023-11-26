@@ -23,6 +23,11 @@ Repo para armazenar os resumos e estudos para certificação aws
   - us-east-2b = ...
   - us-east-2c = ...
   - ...
+ 
+## Passo 6: Zonas Locais (ZL)
+* ZL = Data centers menores conectados às zonas de disponibilidade e mais próximos dos usuários finais
+
+
 
 <h1 align="center">
   <br>
