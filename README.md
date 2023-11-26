@@ -17,6 +17,12 @@ Repo para armazenar os resumos e estudos para certificação aws
   - east = direção dentro do continente
   - 2 = quantidade de data centers dentro daquela região
 
+## Passo 5: Zonas de disponibilidade
+* [us]-[east]-[2][a] = Ohio
+  - a = data center da Zona de disponibilidade a
+  - us-east-2b = ...
+  - us-east-2c = ...
+  - ...
 
 <h1 align="center">
   <br>
