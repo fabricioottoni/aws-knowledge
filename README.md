@@ -27,6 +27,8 @@ Repo para armazenar os resumos e estudos para certificação aws
 ## Passo 6: Zonas Locais (ZL)
 * ZL = Data centers menores conectados às zonas de disponibilidade e mais próximos dos usuários finais
 
+## Passo 7: Wavelength
+* É a infraestrutura da AWS dentro das operadoras de telefonia para que a comunicação com os data centers da AWS seja a mais rápida
 
 
 <h1 align="center">
