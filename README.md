@@ -31,6 +31,10 @@ Repo para armazenar os resumos e estudos para certificação aws
 * É a infraestrutura da AWS dentro das operadoras de telefonia para que a comunicação com os data centers da AWS seja a mais rápida
 
 
+
+
+
+
 <h1 align="center">
   <br>
   <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a>
