@@ -33,6 +33,11 @@ Repo para armazenar os resumos e estudos para certificação aws
 ## Passo 8: AWS Outposts
 * O AWS Outposts é uma família de soluções totalmente gerenciadas que fornecem infraestrutura e serviços da AWS para praticamente qualquer local da borda ou on-premises para uma experiência híbrida verdadeiramente consistente. As soluções do Outposts permitem que os clientes estendam e executem serviços da AWS nativos on-premises
 
+## Passo 9: AWS IAM (Identity Access Management)
+-- console ->         users, roles, groups ----------------------->              IBP (Identity Based Police) -> EC2
+-- cli -----> IAM --> federated users (facebook, google, etc...) -> Políticas -> RBP (Resource Based Police) -> S3
+-- api ----->         applications ------------------------------->                                          -> Auto Scalling, ALB, etc
+
 
 
 <h1 align="center">
