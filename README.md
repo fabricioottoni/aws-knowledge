@@ -39,7 +39,26 @@ Repo para armazenar os resumos e estudos para certificação aws
 -- cli -----> IAM --> federated users (facebook, -> Políticas -> RBP (Resource Based Police) -> S3
 -- api ----->         google, etc...)            ->                                          -> Auto Scalling, ALB
                       applications --------------->                                          -> etc...
+
+--| AWS Account |--
+|
+|   Usuários -> Nome -> Permissões/Privilégios -> Console, CLI, API...
+|                       ( cria sem permissões )
+|
+|   Grupos -> Usuários -> Permissões/Privilégios
+|
+|
+|   Roles -> Serviços
+|
+|
+|   Policies -> Aplicadas aos Usuários ou aos Grupos
+|
+---
 ```
+
+## Passo 10: Criar um usuário na AWS
+
+
 
 
 <h1 align="center">
