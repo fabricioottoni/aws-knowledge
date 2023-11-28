@@ -57,6 +57,15 @@ Repo para armazenar os resumos e estudos para certificação aws
 ```
 
 ## Passo 10: Criar um usuário na AWS
+* Procurar pelo serviço: IAM
+* Acessar o menu lateral Usuários/Users
+* Definir o nome do usuário
+* Fornecer acesso para os usuários ao Console de Gerenciamento da AWS - opcional
+  - Criar um usuário direto no IAM
+* Não atribuir grupo deixando na opção padrão: Adicionar usuário ao grupo (futuramente)
+* Criar uma etiqueta (TAG)
+  - Chave: Departamento
+  - Valor: TI
 
 
 
