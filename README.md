@@ -37,8 +37,8 @@ Repo para armazenar os resumos e estudos para certificação aws
 ```bash
 -- console ->         users, roles, groups ------->              IBP (Identity Based Police) -> EC2
 -- cli -----> IAM --> federated users (facebook, -> Políticas -> RBP (Resource Based Police) -> S3
--- api ----->         google, etc...)            ->                                          -> Auto Scalling, ALB, etc
-                      applications --------------->                                          
+-- api ----->         google, etc...)            ->                                          -> Auto Scalling, ALB
+                      applications --------------->                                          -> etc...
 ```
 
 
