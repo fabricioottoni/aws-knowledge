@@ -75,6 +75,12 @@ Repo para armazenar os resumos e estudos para certificação aws
   - Por cópia de outro usuário:
   - Por Police diretamente: AdministratorAccess
 
+## Passo 12: Entendendo sobre o processo de Autenticação
+* Basicamente existem 2 formas diferentes de AUTENTICAÇÃO
+  - Por informações do usuário: login, senha e MFA (Acesso ao console)
+    - Usuário -> login, senha e MFA -> Console
+  - Por informações da conta: Access Key ID e Secret Access Key (Acesso para CLI e API)
+    - CLI ou API -> Access Key ID e Secret Access Key -> IAM -> API -> EC2, S3, ALB, Route 53...
 
 
 
