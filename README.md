@@ -86,7 +86,7 @@ Repo para armazenar os resumos e estudos para certificação aws
     - CLI ou API -> Access Key ID e Secret Access Key -> IAM -> API -> EC2, S3, ALB, Route 53...
     ```
 
-
+## Passo 13: Entendendo e habilitando o MFA (Multi-factor authentication)
 
 
 
