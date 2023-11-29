@@ -67,6 +67,17 @@ Repo para armazenar os resumos e estudos para certificação aws
   - Chave: Departamento
   - Valor: TI
 
+## Passo 11: Aplicando política de acesso ao usuário
+* Procurar pelo serviço: IAM
+* Acessar o menu lateral Usuários/Users
+* Adicionar permissões
+  - Por grupo:
+  - Por cópia de outro usuário:
+  - Por Police diretamente: AdministratorAccess
+
+
+
+
 
 
 
