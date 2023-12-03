@@ -1,5 +1,8 @@
-# aws-knowledge # ID: 933248616516
+# aws-knowledge
 Repo para armazenar os resumos e estudos para certificação aws
+
+# Login
+https://933248616516.signin.aws.amazon.com/console
 
 ## Passo 1: Criação da conta gratuita
 
