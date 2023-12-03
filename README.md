@@ -90,6 +90,13 @@ https://933248616516.signin.aws.amazon.com/console
     ```
 
 ## Passo 13: Entendendo e habilitando o MFA (Multi-factor authentication)
+* Procurar pelo serviço: IAM
+* Acessar o menu lateral Painel
+* Habilitar MFA
+  - Para root
+  - Para cada usuário novo
+
+
 
 
 
