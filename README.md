@@ -119,7 +119,8 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Política de Senha/Password Police
   - Editar e colocar os critérios necessários
 
-
+## Passo 15: O que é virtualização
+   - EC2: Elastic Computing Cloud ( E C [2] )
 
 
 <h1 align="center">
