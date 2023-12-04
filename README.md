@@ -96,7 +96,12 @@ https://933248616516.signin.aws.amazon.com/console
   - Para root
   - Para cada usuário novo
 
-
+## Passo 14: Alterando a política dde senhas do IAM
+* Procurar pelo serviço: IAM
+* Acessar o menu lateral: Painel
+* Acessar o menu lateral: Configurações da Conta/Account Settings
+  - Política de Senha/Password Police
+  - Editar e colocar os critérios necessários
 
 
 
