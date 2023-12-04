@@ -4,6 +4,22 @@ Repo para armazenar os resumos e estudos para certificação aws
 # Login
 https://933248616516.signin.aws.amazon.com/console
 
+# Tipos de Cloud Computing
+```bash
+[  On-site  ]       [   IaaS   ]      [   PaaS   ]       [   SaaS   ]
+
+Applications                                             Applications
+    Data                                                     Data
+   Runtime                              Runtime             Runtime
+ Middleware                            Middleware          Middleware
+    O/S                                   O/S                 O/S
+Virtualization     Virtualization     Virtualization      Virtualization
+   Servers            Servers            Servers             Servers
+   Storage            Storage            Storage             Storage
+  NetWorking         NetWorking         NetWorking          NetWorking
+
+```
+
 ## Passo 1: Criação da conta gratuita
 
 ## Passo 2: Configuração de alertas
