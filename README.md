@@ -5,6 +5,7 @@ Repo para armazenar os resumos e estudos para certificação aws
 https://933248616516.signin.aws.amazon.com/console
 
 # Tipos de Cloud Computing
+  - On-site : (On-premisse) Todo recurso computacional está alocado dentro do cliente
   - IaaS : Infrastructure as a Service
   - PaaS : Platform as a Service
   - SaaS : Software as a Service
