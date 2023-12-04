@@ -5,6 +5,10 @@ Repo para armazenar os resumos e estudos para certificação aws
 https://933248616516.signin.aws.amazon.com/console
 
 # Tipos de Cloud Computing
+  - IaaS : Infrastructure as a Service
+  - PaaS : Platform as a Service
+  - SaaS : Software as a Service
+
 ```bash
 [  On-site  ]       [   IaaS   ]      [   PaaS   ]       [   SaaS   ]
 
