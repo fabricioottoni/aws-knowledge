@@ -13,10 +13,10 @@ Applications                                             Applications
    Runtime                              Runtime             Runtime
  Middleware                            Middleware          Middleware
     O/S                                   O/S                 O/S
-Virtualization     Virtualization     Virtualization      Virtualization
-   Servers            Servers            Servers             Servers
-   Storage            Storage            Storage             Storage
-  NetWorking         NetWorking         NetWorking          NetWorking
+Virtualization     Virtualization     Virtualization     Virtualization
+   Servers            Servers            Servers            Servers
+   Storage            Storage            Storage            Storage
+  NetWorking         NetWorking         NetWorking         NetWorking
 
 ```
 
