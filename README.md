@@ -127,6 +127,33 @@ Virtualization     Virtualization     Virtualization     Virtualization
 ## Passo 15: O que é virtualização
    - EC2: Elastic Computing Cloud ( E C [2] )
 
+```bash
+
+[      On-site     ]                  [ EC2 - Elastic Compute Cloud ]
+
+|------------------| -> Word          |-------|  |-------|  |-------|
+|   Applications   | -> Excel         |  APP  |  |  APP  |  |  APP  |
+|------------------| -> App           |-------|  |-------|  |-------|
+                                      
+                                      
+                                      |-------|  |-------|  |-------|
+|------------------|                  |  Win  |  | Linux |  | MacOs |
+|                  | -> Windows       |-------|  |-------|  |-------|
+| Operating System | -> Linux         
+|                  | -> MacOS
+|------------------|                  |-----------------------------|
+                                      |    Virtualization Layer     |
+                                      |-----------------------------|
+
+
+|------------------|                  |-----------------------------|
+|     Hardware     |                  |          Hardware           |
+|------------------|                  |-----------------------------|
+
+```
+
+
+
 
 <h1 align="center">
   <br>
