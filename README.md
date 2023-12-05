@@ -158,6 +158,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Segurança
   - Serviços AWS
   - Custo Baixo
+  - Descomplicado/Fácil
 
 
 
