@@ -152,6 +152,14 @@ Virtualization     Virtualization     Virtualization     Virtualization
 
 ```
 
+## Passo 16: Conhecendo o EC2
+* Vantagens
+  - Controle
+  - Segurança
+  - Serviços AWS
+  - Custo Baixo
+
+
 
 
 
