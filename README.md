@@ -174,7 +174,13 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Conferir outras configurações caso necessário
   - Clicar em executar Instância
 
-
+## Passo 18: Acessando uma instancia EC2 windows 2019
+* Utilizar acesso RDP local
+* Utilizar o par de chaves erado no passo anterior
+* Opções da Instância (principais)
+  - Interromper
+  - Iniciar
+  - Encerrar
 
 
 <h1 align="center">
