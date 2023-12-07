@@ -169,7 +169,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Escolher a imagem da Instância: Windows, Linux, MacOs, Etc ... Escolhemos Windows Base para teste
   - Definir a quantidade de Instâcias: 1 (uma para teste)
   - Tipo de Instância: t2.micro
-  - Par de chaves: Criar um novo -> aws-server
+  - Par de chaves: Criar um novo -> aws-server -> Criar certificado
   - Nas configurações de rede: deixar apenas para acesso pelo meu IP
   - Conferir outras configurações caso necessário
   - Clicar em executar Instância
