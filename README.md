@@ -1,4 +1,4 @@
-# aws-knowledge
+8# aws-knowledge
 Repo para armazenar os resumos e estudos para certificação aws
 
 # Login
@@ -160,6 +160,19 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Custo Baixo
   - Descomplicado/Fácil
 
+## Passo 17: Criando uma instancia EC2 windows 2019
+* Acessar o menu lateral: Computação/Computing
+* Procurar pelo serviço: EC2
+* Escolher a opção: Executar Instância
+* Preencher os campos necessárrios:
+  - Nome da Instância: servidor1A (Nome de acordo com o projeto que se deseja criar)
+  - Escolher a imagem da Instância: Windows, Linux, MacOs, Etc ... Escolhemos Windows Base para teste
+  - Definir a quantidade de Instâcias: 1 (uma para teste)
+  - Tipo de Instância: t2.micro
+  - Par de chaves: Criar um novo -> aws-server -> Criar certificado
+  - Nas configurações de rede: deixar apenas para acesso pelo meu IP
+  - Conferir outras configurações caso necessário
+  - Clicar em executar Instância
 
 
 
