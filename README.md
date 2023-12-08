@@ -176,7 +176,30 @@ Virtualization     Virtualization     Virtualization     Virtualization
 
 ## Passo 18: Acessando uma instancia EC2 windows 2019
 * Utilizar acesso RDP local
-* Utilizar o par de chaves erado no passo anterior
+* Utilizar o par de chaves gerado no passo anterior
+* Opções da Instância (principais)
+  - Interromper
+  - Iniciar
+  - Encerrar
+
+
+## Passo 19: Criando uma instancia EC2 Linux
+* Acessar o menu lateral: Computação/Computing
+* Procurar pelo serviço: EC2
+* Escolher a opção: Executar Instância
+* Preencher os campos necessárrios:
+  - Nome da Instância: servidor1B (Nome de acordo com o projeto que se deseja criar)
+  - Escolher a imagem da Instância: Windows, Linux, MacOs, Etc ... Escolhemos Linux Base para teste
+  - Definir a quantidade de Instâcias: 1 (uma para teste)
+  - Tipo de Instância: t2.micro
+  - Par de chaves: Utilizar existente -> aws-server 
+  - Nas configurações de rede: deixar apenas para acesso pelo meu IP
+  - Conferir outras configurações caso necessário
+  - Clicar em executar Instância
+ 
+## Passo 19: Acessando uma instancia EC2 Linux 2023
+* Utilizar acesso Conexão de Instância do EC2
+* Utilizar o par de chaves gerado nos passos anteriores
 * Opções da Instância (principais)
   - Interromper
   - Iniciar
