@@ -183,7 +183,6 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Iniciar
   - Encerrar
 
-
 ## Passo 19: Criando uma instancia EC2 Linux
 * Acessar o menu lateral: Computação/Computing
 * Procurar pelo serviço: EC2
@@ -198,7 +197,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Conferir outras configurações caso necessário
   - Clicar em executar Instância
  
-## Passo 19: Acessando uma instancia EC2 Linux 2023
+## Passo 20: Acessando uma instancia EC2 Linux 2023
 * Utilizar acesso Conexão de Instância do EC2
 * Utilizar o par de chaves gerado nos passos anteriores
 * Opções da Instância (principais)
@@ -206,6 +205,21 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Iniciar
   - Encerrar
 
+## Passo 21: O que é User Data?
+* É a parte dentro da instância EC2 que ao iniciar você consegue adicionar um código e esse código vai rodar somente uma vez no START daquela instância e esse código vai ser executado dentro da instância
+* Acessar o menu lateral: Computação/Computing
+* Procurar pelo serviço: EC2
+* Na criação da Instância, nas configurações avançadas, existe o tópico do "User Data"
+  - Pode ser um código como texto (As text):
+    ```bash
+    #!/usr/bin/env bash
+
+    yum install httpd -y
+    systemctl start httpd
+    systemctl enable httpd
+    ```
+  - Pode ser um arquivo de script (As file - Limitado ao tamanho de 16KB):
+    - Scripts do tipos: .sh, .bat ou powershell
 
 <h1 align="center">
   <br>
