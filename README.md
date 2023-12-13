@@ -238,6 +238,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Clicar em executar Instância
 
 ## Passo 23: Acessando S3 via EC2 com IAM User
+* < criar resumo >
 
 
 
