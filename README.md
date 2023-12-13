@@ -221,6 +221,26 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Pode ser um arquivo de script (As file - Limitado ao tamanho de 16KB):
     - Scripts do tipos: .sh, .bat ou powershell
 
+## Passo 22: Criando uma Instância com User Data
+* Acessar o menu lateral: Computação/Computing
+* Procurar pelo serviço: EC2
+* Escolher a opção: Executar Instância
+* Preencher os campos necessárrios:
+  - Nome da Instância: webserver01 (Nome de acordo com o projeto que se deseja criar)
+  - Escolher a imagem da Instância: Windows, Linux, MacOs, Etc ... Escolhemos Amazon Linux Base para teste
+  - Definir a quantidade de Instâcias: 1 (uma para teste)
+  - Tipo de Instância: t2.micro
+  - Par de chaves: Utilizar existente -> aws-server 
+  - Nas configurações de rede:
+    - deixar aberto para todos os IPs
+    - permitir tráfego http
+  - Conferir outras configurações caso necessário
+  - Clicar em executar Instância
+
+## Passo 23: Acessando S3 via EC2 com IAM User
+
+
+
 <h1 align="center">
   <br>
   <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a>
