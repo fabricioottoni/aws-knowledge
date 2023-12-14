@@ -246,6 +246,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Não marcar a opção: Fornecer acesso para os usuários ao Console de Gerenciamento da AWS - opcional
   - A única política associada deve ser S3FullAccess
   - Após o usuário criado criar um par de chaves para ele poder ser utilizado
+  - Os valores aparecem apenas 1 vez
 * Retomar o terminal da instância e executar o comando: aws configure:
   - informar a chave de acesso: AWS Access Key ID
   - informar a chave de segredo: AWS Secret Key
@@ -253,6 +254,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - informar o outputformat: none
 * Listar conteúdo do S3: aws s3 ls
 * Agora se consegue ver os aruivos através das credenciais de chaves na aws. (método falho, com pouca segurança)
+* Após os testes apagar o usuário
 
 
 <h1 align="center">
