@@ -238,8 +238,21 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Clicar em executar Instância
 
 ## Passo 23: Acessando S3 via EC2 com IAM User
-* < criar resumo >
-
+* Realizar o "Passo 20"deste tutorial
+* No terminal entre no modo admin de privilégio: sudo su
+* Listar conteúdo do S3: aws s3 ls
+* acontecerá o seguinte erro: Unable to locate credentials. You can configure credentials by running "aws configure"
+* Executar o "Passo 10" com as seguintes exceções:
+  - Não marcar a opção: Fornecer acesso para os usuários ao Console de Gerenciamento da AWS - opcional
+  - A única política associada deve ser S3FullAccess
+  - Após o usuário criado criar um par de chaves para ele poder ser utilizado
+* Retomar o terminal da instância e executar o comando: aws configure:
+  - informar a chave de acesso: AWS Access Key ID
+  - informar a chave de segredo: AWS Secret Key
+  - informar a region: us-east-1 (virgínia)
+  - informar o outputformat: none
+* Listar conteúdo do S3: aws s3 ls
+* Agora se consegue ver os aruivos através das credenciais de chaves na aws. (método falho, com pouca segurança)
 
 
 <h1 align="center">
