@@ -255,6 +255,8 @@ Virtualization     Virtualization     Virtualization     Virtualization
 * Listar conteúdo do S3: aws s3 ls
 * Agora se consegue ver os aruivos através das credenciais de chaves na aws. (método falho, com pouca segurança)
 * Após os testes apagar o usuário
+* Após os testes removar as credenciais na pasta do EC2
+  - Na pasta ~/.aws remover todo o conteúdo com: rm -rf *
 
 
 <h1 align="center">
