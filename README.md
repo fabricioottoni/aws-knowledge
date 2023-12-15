@@ -238,7 +238,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Clicar em executar Instância
 
 ## Passo 23: Acessando S3 via EC2 com IAM User
-* Realizar o "Passo 20"deste tutorial
+* Realizar o "Passo 20" deste tutorial
 * No terminal entre no modo admin de privilégio: sudo su
 * Listar conteúdo do S3: aws s3 ls
 * acontecerá o seguinte erro: Unable to locate credentials. You can configure credentials by running "aws configure"
@@ -258,6 +258,27 @@ Virtualization     Virtualization     Virtualization     Virtualization
 * Após os testes removar as credenciais na pasta do EC2
   - Na pasta ~/.aws remover todo o conteúdo com: rm -rf *
 
+## Passo 24: Acessando S3 via EC2 com IAM Roles (funçõews
+* Realizar o "Passo 20" deste tutorial
+* No terminal entre no modo admin de privilégio: sudo su
+* Listar conteúdo do S3: aws s3 ls
+* Acontecerá o seguinte erro: Unable to locate credentials. You can configure credentials by running "aws configure"
+* Procurar pelo serviço: IAM
+* Acessar o menu lateral: Painel
+* Acessar o menu lateral: Funções (Roles)
+* Clicar em "Criar Perfil"
+ - Selecionar o tipo de entidade confiável: Serviço AWS
+ - Selecionar caso de uso: EC2
+ - Escolher como permissão/acesso: S3FullAccess
+ - Escolher um nome para a função: ec2-s3-full-access
+* Procurar pelo serviço: EC2
+* Escolher a opção: Executar Instância
+  - Selecioanr a Instância que receberá a Role/função
+  - Cricar em Ações:
+    - Segurança
+      - Modificar função do IAM
+        - Escolher a função: ecs-s3-full-access
+        - Atualizar função do IAM
 
 <h1 align="center">
   <br>
