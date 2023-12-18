@@ -280,6 +280,18 @@ Virtualization     Virtualization     Virtualization     Virtualization
         - Escolher a função: ecs-s3-full-access
         - Atualizar função do IAM
 
+## Passo 25: O AWS Batch (Lote/Grupo)
+* Um serviço da AWS criado para rodar scripts em lote/grupo em grande quantidade.
+* Para iniciar um batch precisamos das seguintes etapas:
+  - Criar um job: Pode ser um job de shell script ou docker images
+  - Job definition: Onde definimos os scripts.
+  - Job Queue: Fila de trabalho dos scripts
+  - Batch compute environment: Recebe ações de EC2/ECS/Fargate
+
+
+
+
+
 <h1 align="center">
   <br>
   <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a>
