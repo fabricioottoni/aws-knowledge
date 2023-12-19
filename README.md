@@ -288,7 +288,14 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Job Queue: Fila de trabalho dos scripts
   - Batch compute environment: Recebe ações de EC2/ECS/Fargate
 
-
+## Passo 26: Sobre o AWS LightSail (Simple cloud server)(com menos poder computacional)
+* Significa "Navegar com facilidade"
+*  Pode iniciar instancias linux, windows
+*  Toda parte de compute
+*  Storage
+*  Configurações básicas de VPC
+*  Servidores pré configurados
+*  Conexão SSH
 
 
 
