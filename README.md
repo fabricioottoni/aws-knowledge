@@ -258,7 +258,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
 * Após os testes removar as credenciais na pasta do EC2
   - Na pasta ~/.aws remover todo o conteúdo com: rm -rf *
 
-## Passo 24: Acessando S3 via EC2 com IAM Roles (funçõews
+## Passo 24: Acessando S3 via EC2 com IAM Roles (funções)
 * Realizar o "Passo 20" deste tutorial
 * No terminal entre no modo admin de privilégio: sudo su
 * Listar conteúdo do S3: aws s3 ls
@@ -296,6 +296,8 @@ Virtualization     Virtualization     Virtualization     Virtualization
 *  Configurações básicas de VPC
 *  Servidores pré configurados
 *  Conexão SSH
+
+  ## 
 
 
 
