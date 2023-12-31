@@ -290,14 +290,34 @@ Virtualization     Virtualization     Virtualization     Virtualization
 
 ## Passo 26: Sobre o AWS LightSail (Simple cloud server)(com menos poder computacional)
 * Significa "Navegar com facilidade"
-*  Pode iniciar instancias linux, windows
-*  Toda parte de compute
-*  Storage
-*  Configurações básicas de VPC
-*  Servidores pré configurados
-*  Conexão SSH
+* Pode iniciar instancias linux, windows
+* Toda parte de compute
+* Storage
+* Configurações básicas de VPC
+* Servidores pré configurados
+* Conexão SSH
 
-  ## 
+## Passo 27: Docker
+* Veio para mudar a indústria da virtualização e servidores
+```bash
+
+[         Antes do Docker         ]        [         Depois do Docker        ]
+
+|---------------------------------|        |-----------------------------------------|
+|       VM1      |       VM2      |        | Container 1 | Container 2 | Container 3 |
+|----------------|----------------|        |             |             |             |
+|       APP      |       APP      |        |    Pyton    |     .Net    |    Java     |   <- Recurso
+|----------------|----------------|        |             |             |             |
+|       OS       |       OS       |        | Code/Setup  | Code/Setup  | Code/Setup  |    
+|----------------|----------------|        |-------------|-------------|-------------|
+| Proc/Disco/Mem | Proc/Disco/Mem |        |              Docker Image               |
+|---------------------------------|        |-----------------------------------------|
+|           Hypervisor            |        |                Windows OS               |
+|---------------------------------|        |-----------------------------------------|
+|             Server              |        |                 Server                  |
+|---------------------------------|        |-----------------------------------------|
+
+```
 
 
 
