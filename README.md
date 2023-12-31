@@ -309,7 +309,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
 |       APP      |       APP      |        |    Pyton    |     .Net    |    Java     |   <- Recurso
 |----------------|----------------|        |             |             |             |
 |       OS       |       OS       |        | Code/Setup  | Code/Setup  | Code/Setup  |    
-|----------------|----------------|        |-------------|-------------|-------------|
+|----------------|----------------|        |-----------------------------------------|
 | Proc/Disco/Mem | Proc/Disco/Mem |        |              Docker Image               |
 |---------------------------------|        |-----------------------------------------|
 |           Hypervisor            |        |                Windows OS               |
