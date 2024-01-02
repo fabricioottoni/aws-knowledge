@@ -318,9 +318,16 @@ Virtualization     Virtualization     Virtualization     Virtualization
 |---------------------------------|        |-----------------------------------------|
 
 ```
-## Passo 28: O Amazon Container Service (ECS)
-* 
-
+## Passo 28: O Amazon Elastic Container Service (ECS)
+* Existem 2 tipo de de clusters ECS:
+  - ECS EC2 Cluster: Você gerencia, você configura autoscalling, você configura indisponibilidade
+  - ECS Fargate Cluster: É serverless, você nao configura nada. A AWS gerencia pra você.
+* "Docker Container" é a mesma coisa que "AWS Task" (task = container)
+* "Docker Image" é a mesma coisa que "AWS Registry" (registry = image)
+* ECR (Elastic Container Registry) é o lugar na AWS que gerencia os registries
+* ECS Cluster: Armazena todos os recursos das zonas de disponibilidades
+* ECS Service: Gerencia todos os recursos das zonas de disponibilidades
+* ECS Container Instance: armazena as configurações de task definitions
 
 <h1 align="center">
   <br>
