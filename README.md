@@ -328,6 +328,25 @@ Virtualization     Virtualization     Virtualization     Virtualization
 * ECS Cluster: Armazena todos os recursos das zonas de disponibilidades
 * ECS Service: Gerencia todos os recursos das zonas de disponibilidades
 * ECS Container Instance: armazena as configurações de task definitions
+```bash
+
+          [               AZ1               ] 
+
+          |---------------------------------| 
+          |       VM1      |       VM2      | 
+          |----------------|----------------| 
+          |       APP      |       APP      | 
+          |----------------|----------------| 
+          |       OS       |       OS       | 
+          |----------------|----------------| 
+          | Proc/Disco/Mem | Proc/Disco/Mem | 
+          |---------------------------------| 
+          |           Hypervisor            | 
+          |---------------------------------| 
+          |             Server              | 
+          |---------------------------------| 
+
+```
 
 <h1 align="center">
   <br>
