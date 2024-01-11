@@ -325,26 +325,41 @@ Virtualization     Virtualization     Virtualization     Virtualization
 * "Docker Container" é a mesma coisa que "AWS Task" (task = container)
 * "Docker Image" é a mesma coisa que "AWS Registry" (registry = image)
 * ECR (Elastic Container Registry) é o lugar na AWS que gerencia os registries
-* ECS Cluster: Armazena todos os recursos das zonas de disponibilidades
-* ECS Service: Gerencia todos os recursos das zonas de disponibilidades
-* ECS Container Instance: armazena as configurações de task definitions
+* ECS Cluster: Armazena todos os recursos das zonas de disponibilidades (ECS Service)
+* ECS Service: Gerencia todos os recursos das zonas de disponibilidades (ECS Container Instance)
+* ECS Container Instance: Armazena as configurações de task definitions (Task)
+* ECS Task: É o container/task baseado em um registry/image ECR
 ```bash
 
-          [               AZ1               ] 
-
-          |---------------------------------| 
-          |       VM1      |       VM2      | 
-          |----------------|----------------| 
-          |       APP      |       APP      | 
-          |----------------|----------------| 
-          |       OS       |       OS       | 
-          |----------------|----------------| 
-          | Proc/Disco/Mem | Proc/Disco/Mem | 
-          |---------------------------------| 
-          |           Hypervisor            | 
-          |---------------------------------| 
-          |             Server              | 
-          |---------------------------------| 
+          [               AZ1               ]         [               AZ2               ]
+                                              
+          |---------------------------------|         |---------------------------------|
+          |                                 |         |                                 |
+|------------------------------------------------------------------------------------------------------------------------------|
+|         |                                 |         |                                 |                                      |
+|         |                                 |         |                                 |                                      |
+|         |                                 |         |                                 |                                      |
+|  ||=====================================================================================================||                   |
+|  ||     |                                 |         |                                 |                 ||                   |
+|  ||     |                                 |         |                                 |                 ||                   |
+|  ||     |                                 |         |                                 |                 ||        ECS        |
+|  ||     |---------------------------------|         |---------------------------------|                 ||                   |
+|  ||     |                                 |         |                                 |                 ||      Cluster      |
+|  ||     |      ECS Container Instance     |         |      ECS Container Instance     |                 ||                   |
+|  ||     |                                 |         |                                 |       ECS       ||                   |
+|  ||     |  |------------| |------------|  |         |  |------------| |------------|  |     Service     ||                   |
+|  ||     |  |            | |            |  |         |  |            | |            |  |                 ||                   |
+|  ||     |  |    Task    | |    Task    |  |         |  |    Task    | |    Task    |  |                 ||                   |
+|  ||     |  |            | |            |  |         |  |            | |            |  |                 ||                   |
+|  ||     |  |------------| |------------|  |         |  |------------| |------------|  |                 ||                   |
+|  ||     |                                 |         |                                 |                 ||                   |
+|  ||     |---------------------------------|         |---------------------------------|                 ||                   |
+|  ||     |                                 |         |                                 |                 ||                   |
+|  ||=====================================================================================================||                   |
+|         |                                 |         |                                 |                                      |
+|------------------------------------------------------------------------------------------------------------------------------|
+          |                                 |         |                                 | 
+          |---------------------------------|         |---------------------------------|
 
 ```
 
