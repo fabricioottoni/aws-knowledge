@@ -402,6 +402,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Criar Task
   - Aguardar a task ficar com o status "Em execução"
   - Copiar o endereçamento IP público das task para o navegador e aguardar a exibição da página de "Welcome" do nginx
+* Para evitar custos adicionais para a tarefa e excluir o cluster
 
 ## Passo 30: Storage
 
