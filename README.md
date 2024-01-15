@@ -363,6 +363,53 @@ Virtualization     Virtualization     Virtualization     Virtualization
 
 ```
 
+## Passo 29: Criando um Docker Container no ECS
+* Acessar a opção "Serviços" no menu do topo
+* Escolher a opção "Contêineres" em seguida "Elastic Container Service"
+* Criar um cluster na opção "Criar Cluster"
+  - Utilizar a opção "AWS Fargate (sem servidor)"
+  - Definir um nome para o cluster: cluster01
+  - Criar cluster
+* Selecionar o cluster e criar as "Tasks definitions" do tipo "AWS Fargate"
+  - Definir um nome para a task: task01
+  - Definir a CPU: .25 (Escolher a menor para teste)
+  - Definir o tamanho/memória: .5 GB (escolher a menor para teste)
+  - Adicionar um contêiner:
+    * Nome: nginx
+    * Image: nginx
+    * Port Mapping: 80
+    * Sistema operacional: Linux
+    * Clicar em Adicionar
+  - Criar Task definition
+  - Cerificar que a task definition está "Ativa"
+* Retornar ao cluster
+* Iniciar uma task em "Tasks -> Run new task"
+  - Opções de computação: "Estratégia do provedor de capacidade"
+  - Provedor de capacidade: Fargate
+  - Versão da plataforma: Latest
+  - Configuração de implantação:
+    * Tipo de aplicação: Tarefa
+    * Família: task01 (nome criado na task definition)
+    * Criar um novo grupo de segurança:
+      - nome: task01-1234
+      - descrição do grupo: Qualquer texto
+      - Tipo: HTTP
+      - Protocolo: TCP
+      - Port Range: 80
+      - Origem: Anywhere
+      - Salvar
+    * Deixar as outras configurações padrão
+  - Criar Task
+  - Aguardar a task ficar com o status "Em execução"
+  - Copiar o endereçamento IP público das task para o navegador e aguardar a exibição da página de "Welcome" do nginx
+
+## Passo 30: Storage
+
+
+
+
+
+
 <h1 align="center">
   <br>
   <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a>
