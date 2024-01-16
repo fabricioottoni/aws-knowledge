@@ -414,6 +414,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Amazon Storage Gateway
   - Amazon EBS
   - Amazon Instance Store
+
 * Categorias de conteúdos de armezenamento
   - Block Storage: É parecido com o sistema DAS (Data Attached Storage) e possui latência muito baixa servindo para armazenar arquivos do tipo : Blocos, volumes(disco USB, HD, ...)
   - File Storage: É comparado com o sistema NAS(Network Attached Storage) e serve para armazenar dados que serão compartilhados com 1 usuário ou mais.
