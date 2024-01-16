@@ -404,10 +404,22 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Copiar o endereçamento IP público das task para o navegador e aguardar a exibição da página de "Welcome" do nginx
 * Para evitar custos adicionais para a tarefa e excluir o cluster
 
-## Passo 30: Storage
+## Passo 30: Storage S3
+* Serviços de armazenamento:
+  - Amazon S3 (Simple Storare Service)
+  - Amazon Glacer
+  - Amazon EFS
+  - Amazon SnowBall
+  - Amazon CloudFront
+  - Amazon Storage Gateway
+  - Amazon EBS
+  - Amazon Instance Store
+* Categorias de conteúdos de armezenamento
+  - Block Storage: É parecido com o sistema DAS (Data Attached Storage) e possui latência muito baixa servindo para armazenar arquivos do tipo : Blocos, volumes(disco USB, HD, ...)
+  - File Storage: É comparado com o sistema NAS(Network Attached Storage) e serve para armazenar dados que serão compartilhados com 1 usuário ou mais.
+  - Object Storage (S3): serve para armazenar objetos, metadata que ganham uma ID única, um endereçamento (Flat Address / URL)
 
-
-
+## Passo 31: EBS
 
 
 
