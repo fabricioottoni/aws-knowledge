@@ -420,8 +420,72 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - File Storage: É comparado com o sistema NAS(Network Attached Storage) e serve para armazenar dados que serão compartilhados com 1 usuário ou mais.
   - Object Storage (S3): serve para armazenar objetos, metadata que ganham uma ID única, um endereçamento (Flat Address / URL)
 
-## Passo 31: EBS
+## Passo 31: EBS (Elastic Block Storage)
+* Na prática o volume EBS fica fora da Instância EC2.
+* Deve estar na mesma zona de disponibilidade da instância EC2 (us-east-1)
+* Pode ser conectado até 16 instâncias EC2 na mesma zona de disponibilidade:
+  - Através do serviço EBS Multi-Attach
+  - Utilizando o tipo de disco IO1
+  - As instâncias EC2 devem ser do tipo NITRO
+ 
+## Passo 32: Tipos de volume EBS
+* A AWS utiliza 2 tipo de disco
+  - SSD (Solid State Drive): É mais rápido e muito mais caro
+  - HDD (Hard Disk Drive): É mais lento e mais barato
+* O EBS utiliza os seguintes tipos de discos
+  
+  - Para uso geral:
+    
+    * gp3:
+      - Baixo custo SSD
+      - Serve para desktops virtuais
+      - Instâncias para banco de dados como Microsoft SQL Server e Oracle
+      - Aplicações sensíveis a latência
+      - Volumes botáveis com o windows, linux ou macos
+      - Limite de tamanho de 16 terabites
+      - Máximo de IOPS/Volume 16.000
+      - Máximo Throughput/volume (cópia): 1.000 MB/s (1GB)
+        
+    * gp2:
+      - (idem ao gp3)
+      - Máximo Throughput/volume (cópia): 250 MB/s (mais lento para cópia)
+        
+  - IOPS:
+    
+    * io2 Block Express:
+      - Alta performance
+      - Uso intensivo em NoSQL e banco de dados relacional
+      - Tamanho de 4GB a 64TB
+      - Máximo de IOPS/Volume: 256.000
+      - Máximo Throughput/volume (cópia): 4.000 MB/s (4GB)
+      - Máximo de IOPS/Instância: 260.000
+      - Máximo Throughput/instância (cópia): 7.500 MB/s
+      
+      
+    * io2:
+      - Alta performance
+      - Uso intensivo em NoSQL e banco de dados relacional
+      - Tamanho de 4GB a 16TB
+      - Máximo de IOPS/Volume: 64.000
+      - Máximo Throughput/volume (cópia): 1.000 MB/s (1GB)
+      - Máximo de IOPS/Instância: 160.000
+      - Máximo Throughput/instância (cópia): 4.750 MB/s
+        
+    * io1:
+      - Alta performance
+      - Uso intensivo em NoSQL e banco de dados relacional
+      - Tamanho de 4GB a 16TB
+      - Máximo de IOPS/Volume: 64.000
+      - Máximo Throughput/volume (cópia): 1.000 MB/s (1GB)
+      - Máximo de IOPS/Instância: 260.000
+      - Máximo Throughput/instância (cópia): 7.500 MB/s
 
+  - Throughput Optimized:
+    * São HDD (st1) mais lentos
+
+  - Cold HDD:
+    * São HDD (sc1) mais lentos
+    * Com acesso bem menor
 
 
 <h1 align="center">
