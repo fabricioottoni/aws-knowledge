@@ -504,7 +504,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
 * Durabilidade: 99.9999999 (íntegro)
 * Disponibilidade: 99.95 ou 99.99 (do tempo)
 
-
+## Passo 35: Criando um Amazon AMI (Amazon Machine Image) customizada
 
 
 
