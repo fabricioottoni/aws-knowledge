@@ -487,6 +487,18 @@ Virtualization     Virtualization     Virtualization     Virtualization
     * São HDD (sc1) mais lentos
     * Com acesso bem menor
 
+## Passo 33: O que é Snapshot
+* É um serviço que: Cria cópias
+  - Permite utilizar cópias de Instâncias de volumes entre Zonas de disponibilidades
+  - Realiza backup
+  - Menu lateral: EBS (Elastic Block Store) > Volumes
+    - Escolher o volume para criar o snapshot
+    - Clicar em Modify volume > Create Snapshot
+    - Atribuir um nome para a cópia
+    - Clicar em create Snapshot
+  - Menu lateral: EBS (Elastic Block Store) > Snapshot
+  - Para utilizar na prática monta uma VM e puxar o volume do snapshot
+  
 
 <h1 align="center">
   <br>
