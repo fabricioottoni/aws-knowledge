@@ -498,7 +498,20 @@ Virtualization     Virtualization     Virtualization     Virtualization
     - Clicar em create Snapshot
   - Menu lateral: EBS (Elastic Block Store) > Snapshot
   - Para utilizar na prática monta uma VM e puxar o volume do snapshot
-  
+
+## Passo 34: O S3 (Simple Storage Service)
+* Pastas = Bucket: Com nomes únicos e universais
+* Durabilidade: 99.9999999 (íntegro)
+* Disponibilidade: 99.95 ou 99.99 (do tempo)
+
+
+
+
+
+
+
+
+
 
 <h1 align="center">
   <br>
