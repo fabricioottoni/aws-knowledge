@@ -427,6 +427,23 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Através do serviço EBS Multi-Attach
   - Utilizando o tipo de disco IO1
   - As instâncias EC2 devem ser do tipo NITRO
+
+```bash
+
+|--------------------------------------------------|
+|                   EC2 Win 2019                   |
+|----------------|----------------|----------------|
+|      EBS1      |      EBS2      |      EBS3      |
+|----------------|----------------|----------------|
+|       GP2      |       SC1      |       GP2      |
+|----------------|----------------|----------------|
+|       50G      |      125G      |      100G      |
+|----------------|----------------|----------------|
+|                                                  |
+|--------------------------------------------------|
+
+```
+
  
 ## Passo 32: Tipos de volume EBS
 * A AWS utiliza 2 tipo de disco
@@ -505,6 +522,11 @@ Virtualization     Virtualization     Virtualization     Virtualization
 * Disponibilidade: 99.95 ou 99.99 (do tempo)
 
 ## Passo 35: Criando um Amazon AMI (Amazon Machine Image) customizada
+* Em Ec2 > Instâncias
+  - Selecionar a instância que será criada a imagem
+  - Clicar na opção "Ações > Imagens e Modelos > Criar Imagem"
+  - Informar o nome da imagem
+  - Informar a descrição da imagem (opcional)
 
 
 
