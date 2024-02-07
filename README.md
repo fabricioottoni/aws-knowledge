@@ -548,6 +548,17 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Definir as configurações
   - Escolher a nova zona de disponibilidade
 
+## Passo 36: Criando a primeira Bucket
+* Em S3 clicar em "Criar Bucket"
+* O nome da Bucket deve ser único universalmente
+  - Por padrão o prefixo do nome é o identificador único da organização: fabricioottoni-dados
+* Escolher a região da AWS: us-east-1 (Virgínia)
+* Propiriedades de objetos
+  - Habilitar ou desabilitar as ACLs (Access List): por padrão é melhor ligar e futuramente adicionar os filtros
+* Acessar a bucket e fazer o upload de arquivos ou pastas
+* É possível arrastar os arquivos para uma determinada área e realizar o upload
+* Clicando no objeto adicionado exibe todas as propriedades inclusive a uri unica
+* ARN: nome do recurso
 
 
 
