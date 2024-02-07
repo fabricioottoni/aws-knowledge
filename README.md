@@ -560,7 +560,20 @@ Virtualization     Virtualization     Virtualization     Virtualization
 * Clicando no objeto adicionado exibe todas as propriedades inclusive a uri unica
 * ARN: nome do recurso
 
-
+## Passo 37: Classes de armazenamento SD
+* A cobrança pelo armazenamento no S3 é feita com base no tipo de classe de armazenamento
+* Existem 8 tipos de classe de armazenamento
+  1) S3 Padrão: É o tipo de armazenamenbto mais caro da AWS, serve para empresas que fazem o upload e download de arquivos ou utilizam aplicações que fazem o downloa e upload de arquivos de morma automatizada. É a classe mais rápida.
+  2) S3 Inteligent-Tiering: Classe que coloca de forma inteligente o arquivo a ser armazenado na padrão (mais cara) e se esse arquivo não for mexido por algum tempo ele será movido para as classes mais baratas. Um nível de custo 60% mais barato que a padrão.
+  3) S3 Standard-IA (Infrequent Access): Dentro da S3 se os arquivos não forem acessados com uma frequência muito grande eles podem ser deixados nessa classe. Se os acessos ultrapassarem o limite dessa classe você pode pagar por acesso extra. Esse tipo é recomendado para armazenamento de longa duração, backups e datastore.
+  4) S3 One Zone-IA (Infrequant Access): O mesmo que S3 Standard-IA (Infrequent Access), porém em apenas uma zona de disponibilidade diminuindo muito o custo de armazenamento. Isso significa que se essa zona ficar indisponível você perde o acesso ao arquivo.
+  5) S3 Glacier Instant Retrieval: Acessados 2 ou 3 vezes ano ano
+  6) S3 Glacier Flexible Retrieval: Acessados 2 ou 3 vezes ano ano
+  7) S3 Glacier Deep Archive: Armazenados por no mínimo de 7 a 10 anos para possível auditoria ou acesso
+  8) S3 Outposts: Basicamente o mesmo sistema dos glaciers, porem dentro de um Outposts
+* Gráfico de performance:
+    
+  
 
 
 
