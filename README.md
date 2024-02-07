@@ -522,11 +522,31 @@ Virtualization     Virtualization     Virtualization     Virtualization
 * Disponibilidade: 99.95 ou 99.99 (do tempo)
 
 ## Passo 35: Criando um Amazon AMI (Amazon Machine Image) customizada
+* Através desse recurso é possível subir uma máquina idêntica a outra, isto é, já configurada em outra região
+* Existem 2 tipos de imagens:
+  - Públicas: Vem com a AWS ou de terceiros
+  - Privadas: Minhas imagens criadas
 * Em Ec2 > Instâncias
   - Selecionar a instância que será criada a imagem
   - Clicar na opção "Ações > Imagens e Modelos > Criar Imagem"
   - Informar o nome da imagem
   - Informar a descrição da imagem (opcional)
+  - Deixar a máquina reiniciar para garantir o snapshot
+  - Nos 3 volumes adicionados:
+    * Deixar marcada a opção: delete on terminate
+    * Se preferir pode encriptar alguns volumes
+    * Pode também adicionar volumes
+  - Clicar em "Criar Imagem" e aguardar a criação
+* Acompanhar o processo em "AMIs"
+  - Em ações:
+    * Pode editar permissões
+    * Pode torná-la publica
+* Em EC2 > Instâncias pode se criar uma nova instância a partir daquela imagem:
+  - Executar Instância
+  - Definir o nome
+  - Escolher a opção: Minha AMI
+  - Definir as configurações
+  - Escolher a nova zona de disponibilidade
 
 
 
