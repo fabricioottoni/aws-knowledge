@@ -562,6 +562,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
 
 ## Passo 37: Classes de armazenamento SD
 * A cobrança pelo armazenamento no S3 é feita com base no tipo de classe de armazenamento
+  
 * Existem 8 tipos de classe de armazenamento
   1) S3 Padrão: É o tipo de armazenamenbto mais caro da AWS, serve para empresas que fazem o upload e download de arquivos ou utilizam aplicações que fazem o downloa e upload de arquivos de morma automatizada. É a classe mais rápida.
   2) S3 Inteligent-Tiering: Classe que coloca de forma inteligente o arquivo a ser armazenado na padrão (mais cara) e se esse arquivo não for mexido por algum tempo ele será movido para as classes mais baratas. Um nível de custo 60% mais barato que a padrão.
@@ -571,10 +572,27 @@ Virtualization     Virtualization     Virtualization     Virtualization
   6) S3 Glacier Flexible Retrieval: Acessados 2 ou 3 vezes ano ano
   7) S3 Glacier Deep Archive: Armazenados por no mínimo de 7 a 10 anos para possível auditoria ou acesso
   8) S3 Outposts: Basicamente o mesmo sistema dos glaciers, porem dentro de um Outposts
-* Gráfico de performance:
-    
-  
 
+* Gráfico de performance (atualizado):
+```bash
+
+                 |               |                    |                    |                  |                  |   S3 Glacier   |   S3 Glacier     |   S3 Glacier   |
+                 |   S3 Padrão   |   S3 Inteligent-   |   S3 Express One   |   S3 Standard-   |   S3 One Zone-   |   Instant      |   Flexible       |   Deep         |
+                 |               |   Tiering*         |   Zone**           |   IA             |   IA**           |   Retrieval    |   Retrieval***   |   Archive***   |
+|----------------|---------------|--------------------|--------------------|------------------|------------------|----------------|------------------|----------------|
+|                | Armazenamento | Economia automática| Armazenamento de   | Dados acessados  | Dados recriáveis | Dados de longa | Backup e         | Arquivamento de|
+|                | de uso geral  | de custos para     | alta performance   | com pouca        | acessados com    | duração que    | arquivamento de  | dados que são  |
+|                | para dados    | dados com padrões  | para seus dados    | frequência que   | pouca frequência | são acessados  | dados que        | raramente      |
+|  Casos de uso  | acessados com | de acesso          | acessados com mais | precisam de      |                  | algumas vezes  | raramente são    | acessados e    |
+|                | frequência    | desconhecidos ou   | frequência         | acesso em        |                  | por ano com    | acessados e      | custo muito    | 
+|                |               | variáveis          |                    | milisegundos     |                  | recuperações   | baixo custo      | baixo          |
+|                |               |                    |                    |                  |                  | instantâneas   |                  |                |
+|----------------|---------------|--------------------|--------------------|------------------|------------------|----------------|------------------|----------------|
+
+```
+  
+*** ATENÇÃO TERMINAR A TABELA *** 
+https://aws.amazon.com/pt/s3/storage-classes/?gclid=CjwKCAiA8YyuBhBSEiwA5R3-E02LbMhkOsnSjE1hxnouunFvd0ThldTVefFzlhEl03bbcBZuWPMurxoCOlEQAvD_BwE&trk=9c7f9c59-8d98-452d-8a14-441a9b6492f3&sc_channel=ps&ef_id=CjwKCAiA8YyuBhBSEiwA5R3-E02LbMhkOsnSjE1hxnouunFvd0ThldTVefFzlhEl03bbcBZuWPMurxoCOlEQAvD_BwE:G:s&s_kwcid=AL!4422!3!589951433465!e!!g!!custo%20aws%20s3!16393976584!133547553013
 
 
 
