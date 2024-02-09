@@ -588,6 +588,19 @@ Virtualization     Virtualization     Virtualization     Virtualization
 |                |               | variáveis          |                    | milisegundos     |                  | recuperações   | baixo custo      | baixo          |
 |                |               |                    |                    |                  |                  | instantâneas   |                  |                |
 |----------------|---------------|--------------------|--------------------|------------------|------------------|----------------|------------------|----------------|
+| Latência de    | Milissegundos |   Milissegundos    | Milissegundos de   |  Milissegundos   |  Milissegundos   | Milissegundos  | Minutos ou horas |      Horas     |
+| primeiro byte  |               |                    | um dígito          |                  |                  |                |                  |                |
+|----------------|---------------|--------------------|--------------------|------------------|------------------|----------------|------------------|----------------|
+|                | O Amazon S3 fornece o armazenamento mais durável na nuvem. Com base em sua arquitetura exclusiva, o S3 foi projetado para exceder uma durabilidade |
+|                | de dados de 99,999999999% (onze noves). Além disso, o S3 armazena dados de forma redundante em um mínimo de 3 zonas de disponibilidade por padrão, |
+|  Durabilidade  | fornecendo resiliência integrada contra desastres generalizados. Os clientes podem armazenar dados em uma única AZ para minimizar o custo ou a     |
+|                | latência do armazenamento, em várias AZs para maior resiliência contra a perda permanente de um data center inteiro ou em várias regiões da AWS    |
+|                | para atender aos requisitos de resiliência geográfica.                                                                                             |
+|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|
+|
+|
+|
 
 ```
   
