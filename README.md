@@ -596,10 +596,10 @@ Virtualization     Virtualization     Virtualization     Virtualization
 |  Durabilidade  | fornecendo resiliência integrada contra desastres generalizados. Os clientes podem armazenar dados em uma única AZ para minimizar o custo ou a     |
 |                | latência do armazenamento, em várias AZs para maior resiliência contra a perda permanente de um data center inteiro ou em várias regiões da AWS    |
 |                | para atender aos requisitos de resiliência geográfica.                                                                                             |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-|
-|
-|
+|----------------|---------------|--------------------|--------------------|------------------|------------------|----------------|------------------|----------------|
+| Projetado para |     99,99%    |        99,9%       |       99,95%       |       99,9%      |       99,5%      |      99,9%     |      99,99%      |     99,99%     |
+| disponibilidade|               |                    |                    |                  |                  |                |                  |                |
+|----------------|---------------|--------------------|--------------------|------------------|------------------|----------------|------------------|----------------|
 |
 
 ```
