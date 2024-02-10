@@ -615,6 +615,9 @@ Virtualization     Virtualization     Virtualization     Virtualization
 |  Taxa de       |      N/D      |         N/D        |         N/D        |      por GB      |      por GB      |     por GB     |      por GB      |     por GB     |
 |  recuperação   |               |                    |                    |    recuperado    |    recuperado    |   recuperado   |    recuperado    |   recuperado   |
 |----------------|---------------|--------------------|--------------------|------------------|------------------|----------------|------------------|----------------|
+|  Transições de |      Sim      |         Sim        |         Não        |        Sim       |        Sim       |       Sim      |        Sim       |       Sim      |
+|  ciclo de vida |               |                    |                    |                  |                  |                |                  |                |
+|----------------|---------------|--------------------|--------------------|------------------|------------------|----------------|------------------|----------------|
 
 ```
   
