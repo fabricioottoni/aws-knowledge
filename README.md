@@ -622,6 +622,8 @@ Virtualization     Virtualization     Virtualization     Virtualization
 ```
 
 ## Passo 38: Valores do S3
+* Utilizar o AWS Calculator (pesquisar na internet o link)
+* 
 ```bash
 
 |---------------------------------------------------------------------------------------------------------------------------|
