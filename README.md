@@ -620,9 +620,63 @@ Virtualization     Virtualization     Virtualization     Virtualization
 |----------------|---------------|--------------------|--------------------|------------------|------------------|----------------|------------------|----------------|
 
 ```
-  
-*** ATENÇÃO TERMINAR A TABELA *** 
-https://aws.amazon.com/pt/s3/storage-classes/?gclid=CjwKCAiA8YyuBhBSEiwA5R3-E02LbMhkOsnSjE1hxnouunFvd0ThldTVefFzlhEl03bbcBZuWPMurxoCOlEQAvD_BwE&trk=9c7f9c59-8d98-452d-8a14-441a9b6492f3&sc_channel=ps&ef_id=CjwKCAiA8YyuBhBSEiwA5R3-E02LbMhkOsnSjE1hxnouunFvd0ThldTVefFzlhEl03bbcBZuWPMurxoCOlEQAvD_BwE:G:s&s_kwcid=AL!4422!3!589951433465!e!!g!!custo%20aws%20s3!16393976584!133547553013
+
+## Passo 38: Valores do S3
+```bash
+
+|---------------------------------------------------------------------------------------------------------------------------|
+| S3 Standard: Armazenamento de uso geral par qualquer tipo de dados, usado normalmente para dados acessados com frequência |
+|----------------------|----------------------------------------------------------------------------------------------------|
+|  0,023 USD por GB    | Primeiros 50 TB/mês                                                                                |
+|  0,022 USD por GB    | Próximos 450 TB/Mês                                                                                |
+|  0,021 USD por GB    | Mais de 500 TB/Mês                                                                                 |
+|---------------------------------------------------------------------------------------------------------------------------|
+| S3 Inteligent-Tiering*: Economia de custo automática pada dados com padrôes de acesso desconhecidos ou variáveis.         |
+|----------------------|----------------------------------------------------------------------------------------------------|
+| 0,0025 USD por 1.000 | Monitoramento e automação, todo o armazenamento/mês (objetos > 128 KB)                             |
+|            objetos   |                                                                                                    |
+|----------------------|----------------------------------------------------------------------------------------------------|
+|  0,023 USD por GB    | Camada de acesso frequente, primeiros 50 TB/mês                                                    |
+|  0,022 USD por GB    | Camada de acesso frequente, próximos 450 TB/mês                                                    |
+|  0,021 USD por GB    | Camada de acesso frequente, mais de 500 TB/mês                                                     |
+|  0,0125 USD por GB   | Camada de acesso infrequente, todo o armazenamento/mês                                             |
+|  0,004 USD por GB    | Camada de acesso instantâneo de arquivamento, todo armazenamento/mês                               |
+|---------------------------------------------------------------------------------------------------------------------------|
+| S3 Inteligent-Tiering*: Camada de acesso a arquivamento assíncronos opcionais                                             |
+|----------------------|----------------------------------------------------------------------------------------------------|
+|  0,0036 USD por GB   | Camada de acesso de arquivamento, todo o armazenamento/mês                                         |
+|  0,00099 USD por GB  | Camada de acesso de arquivamento profundo, todo o armazenamento/mês                                |
+|---------------------------------------------------------------------------------------------------------------------------|
+| S3 Standard - Infrequent Access**: Para dados com retenção de longa duração, mas acessados com pouca frequência, que      |
+|                      | precisam de acesso em milissegundos                                                                |
+|----------------------|----------------------------------------------------------------------------------------------------|
+|  0,0125 USD por GB   | Todo armazenamento/mês                                                                             |
+|---------------------------------------------------------------------------------------------------------------------------|
+| S3 One Zone - Infrequent acess**: Para dados recriáveis e acessados com pouca frequência que precisam de acesso em        |
+|                      | milissegundos                                                                                      |
+|----------------------|----------------------------------------------------------------------------------------------------|
+|  0,01 USD por GB     | Todo o armazenamento/mês                                                                           |
+|---------------------------------------------------------------------------------------------------------------------------|
+| S3 Glacier Instant Retrieval***: Para dados de arquivo de longa duração acessados uma vez por trimestre com recuperação   |
+|                      | instantânea em milissegundos                                                                       |
+|----------------------|----------------------------------------------------------------------------------------------------|
+|  0,004 USD por GB    | Todo armazenamento/mês                                                                             |
+|---------------------------------------------------------------------------------------------------------------------------|
+| S3 Glacier Flexible Retrieval (antiga S3 Glacier)***: Para backups de longo período de vigência e arquivs com opção de    |
+|                      | recuperação de 1 minuto a 12 horas                                                                 |
+|----------------------|----------------------------------------------------------------------------------------------------|
+|  0,0036 USD por GB   | Todo oarmazenamento/mês                                                                            |
+|---------------------------------------------------------------------------------------------------------------------------|
+| S3 Glacier Deep Archive***: Para arquivamento de dados com retenção de longo período de vigência, acessados uma ou duas   |
+|                      | vezes por ano e que podem ser restaurados em até 12 horas                                          |
+|----------------------|----------------------------------------------------------------------------------------------------|
+|  0,00099 USD por GB  | - Todo o armazenamento/mês                                                                         |
+|---------------------------------------------------------------------------------------------------------------------------|
+| O uso do armazenamento do Amazon S3 é calculado em gigabytes binários (GB), em que 1 GB é 2.30 bytes. Essa unidade de     |
+| medida também é conhecida como gibilbyte (GiB), definida pela Comissão Eletrotécnica Internacional (IEC). Da mesma        |
+| maneira, 1 TB é 2.40 bytes, ou seja 1024 GB.                                                                              |
+|---------------------------------------------------------------------------------------------------------------------------|
+```
 
 
 
