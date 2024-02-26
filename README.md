@@ -681,7 +681,6 @@ Virtualization     Virtualization     Virtualization     Virtualization
 ```
 
 ## Passo 39: Alterando a classe de armazenamento no S3
-
 * Alterar a classe de armazenamento de um aquivo ou pasta:
   - Em S3 abrir o bucket desejado
   - Selecionar o aquivo/pasta para alteração de classe de armazenamento
@@ -695,7 +694,8 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Em propriedades escolher qual a classe de armazenamento
 
 
-
+## Passo 40: O que é o versionamento S3
+* 
 
 
 
