@@ -695,8 +695,35 @@ Virtualization     Virtualization     Virtualization     Virtualization
 
 
 ## Passo 40: O que é o versionamento S3
-* 
+* A AWS cobra pelo armazenamento de todas as versões do mesmo arquivo.
+* É possível apenas suspender o versionamento
+* Não é possível excluir o versionamento uma vez qaue esteja feito.
+  
+```bash
 
+                                                     BUCKET VERSIONING
+          
+                                  |------------------------------------------------------|
+                                  |                                                      |
+                                  |    |----------------|                                |
+                                  |    | Texto.txt - V3 | -> 2.2 MB -> ID:275DBCC17F     |
+                                  |    |----------------|                                |
+                                  |    |----------------|                                |
+                                  |    | Texto.txt - V2 | -> 2.1 MB -> ID:267ADCS89X     |
+              UPLOAD              |    |----------------|                                |
+      |-------------------->      |    |----------------|                                |
+      |                           |    | Texto.txt - V1 | -> 2.0 MB -> ID:NULL           |
+      |                           |    |----------------|                                |
+      |                           |                                                      |
+      |                           |------------------------------------------------------|
+      |         
+      |         |------------|
+|-----------|   | xxxxxxxxxx | Texto.txt -> V1
+|  Usuário  |   | yyyyyyyyyy | Texto.txt -> V2
+|-----------|   | zzzzzzzzzz | Texto.txt -> V3
+                |------------|
+
+```
 
 
 
