@@ -1,5 +1,4 @@
-oxe
-8# aws-knowledge
+# aws-knowledge
 Repo para armazenar os resumos e estudos para certificação aws
 
 # Login
@@ -724,7 +723,19 @@ Virtualization     Virtualization     Virtualization     Virtualization
                 |------------|
 
 ```
-
+## Passo 41: Hospedando um website no S3
+* Em S3 clicar em "Criar Bucket"
+* O nome da Bucket deve ser único universalmente
+  - Por padrão o prefixo do nome é o identificador único da organização: fabricioottoni-website
+* Escolher a região da AWS: us-east-1 (Virgínia)
+* Propiriedades de objetos
+  - Habilitar as ACLs (Access List): por padrão é melhor ligar e futuramente adicionar os filtros
+  - Habilitar a Hospedagem de site estático apontando para o arquivo index.html
+* Acessar a bucket e fazer o upload do aquivo index.html
+* É possível arrastar os arquivos para uma determinada área e realizar o upload
+* Resolvendo o problema de permissões de acesso:
+  - Alterar as permissões do bucket desativando o "Bloqueio de acesso público"
+  - Alterar as permissões do arquivo index.html em "Ações de objeto > Tornar público usando ACL" 
 
 
 
