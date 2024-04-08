@@ -737,7 +737,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Alterar as permissões do bucket desativando o "Bloqueio de acesso público"
   - Alterar as permissões do arquivo index.html em "Ações de objeto > Tornar público usando ACL" 
 
-
+x
 
 
 <h1 align="center">
