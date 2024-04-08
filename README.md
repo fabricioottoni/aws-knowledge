@@ -737,7 +737,37 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Alterar as permissões do bucket desativando o "Bloqueio de acesso público"
   - Alterar as permissões do arquivo index.html em "Ações de objeto > Tornar público usando ACL" 
 
-x
+
+## Passo 42: Habilitando o Ciclo de Vida no S3
+* Criar regras de ciclo de vida para mover os arquivos/objetos entre classes de armazenamento
+* Selecionar o arquivo/objeto dentro do bucket S3
+  - Clicar em gerenciamento
+  - Criar regra de ciclo de vida
+  - Definir um nome para a regra: mover-30-dias-one-ia
+  - Mover através de filtros ou aplicar para todos os objetos
+    * Filtros: Definir prefixos "Development, Finance, Private"ou para toda a pasta sem prefixo (ver documentação de prefixo)
+    * Aplicar para todos os arquivos da bucket: Aceitar a mensagems de "Reconhecimento" da regra para todos os arquivos da bucket.
+    * Definir as ações da regra de ciclo de vida:
+      - Mover versões atuais de objetos entre classes de armazenamento
+      - Escolher transições de classes de armazenamento: Uma zona-IA
+      - Dias depois da criação do objeto: 30
+    * Analisar o resumo do que vai acontecer
+    * Clicar em criar regra
+  - Regra criada, habilitada, todo o bucket, transição para uma zona-IA
+  - Dá para criar uma regra para manter apenas as 10 ultimas versões e evitar custos adicionais por versionamento de arquivos
+    * Clicar em gerenciamento
+    * Criar regra de ciclo de vida
+    * Definir um nome para a regra: remover-versoes-antigas
+    * Excluir permanentemente versões desatualizadas de objetos
+      - Dias após os objetos ficarem desatualizados: 30
+      - Número de versões mais recentes a serem retidas: 10
+    * Analisar o resumo do que vai acontecer
+    * Clicar em criar regra
+    
+
+
+
+
 
 
 <h1 align="center">
