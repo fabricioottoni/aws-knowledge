@@ -766,8 +766,37 @@ Virtualization     Virtualization     Virtualization     Virtualization
     * Número de versões mais recentes a serem retidas: 10
   - Analisar o resumo do que vai acontecer
   - Clicar em criar regra
-    
 
+
+## Passo 43: Replicação de Objetos
+* Replicar objetos de um bucket nos Estados Unidos para outra em Londres
+* Você paga pela replicação e pelo armazenamento
+* Criar um novo bucket s3
+  - Nome: fabricioottoni-dados-london
+  - Região da AWS: UE(Londres) eu-west-2
+  - Habilitar o versionamento: Necessário estar habilidado na origem e no destino para que haja replicação
+* Selecionar o bucket de origem
+  - Selecionar "gerenciamento"
+  - Regras de replicação > Criar Regra de replicação
+  - Nome: us-london
+  - Status: Habilitado
+  - Bucket Origem
+    * Aplicar a todos os objetos do bucket
+  - Destino
+    * Escolha um bucket nesta conta: fabricioottoni-dados-london
+  - Função do IAM
+    * Escolha em funçÕes do IAM existentes
+    * Criar uma nova função
+  - Categoria de armazenamento de destino
+    * Alterar a classe de armazenamento dos objetos replicados
+  - Classe de armazenamento
+    * Padrão-IA
+  - Salvar
+* A mensagem: Replicar objetos existentes -> Sim
+* Configurações de trabalho
+* Escolher: Executar automaticamente o trabalho quando estiver pronto
+* Desabilitar: Relatório de conclusão
+* Salvar
 
 
 
