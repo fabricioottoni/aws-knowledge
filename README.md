@@ -808,7 +808,23 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Políticas aplicadas aos usuários
   - Políticas aplicadas a Grupos
   - Políticas aplicadas a Roles
-  
+
+  ```bash
+                           IAM Policies
+
+
+                 |---|
+  |----------|   | x |  ------> User 
+  |          |   | v |
+  |  Bucket  |   | x |  ------> Group
+  |          |   | v |
+  |----------|   | x |  ------> Role
+                 |---|
+
+                |------| (Upload)
+                | JSON | (List)
+                |------| (etc)
+  ```
 
 
 
