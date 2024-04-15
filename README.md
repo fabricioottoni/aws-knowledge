@@ -799,6 +799,16 @@ Virtualization     Virtualization     Virtualization     Virtualization
 * Salvar
 
 
+## Passo 44: IAM Policies no S3
+* Existem 3 formas de segurança no Bucket S3
+  - Via IAM : Aplica a regra ao grupo ou ao usuário ou a role (controle centralizado)
+  - Via Bucket Police
+  - Via Access List
+* Via IAM (Identity Access Management) Policies: Regras mais centralizadas e gernciamento mais fácil, escritas em JSON e a AWS ajuda nessa escrita.
+  - Políticas aplicadas aos usuários
+  - Políticas aplicadas a Grupos
+  - Políticas aplicadas a Roles
+  
 
 
 
