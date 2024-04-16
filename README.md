@@ -826,6 +826,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
                 |------| (etc)
   ```
 
+
 ## Passo 45: Bucket Policies no S3
 * Permite ou bloqueia quem acessa o conteúdo de uma bucket aplicados diretamente/individualmente em uma bucket
 * Bucket Policies
@@ -854,7 +855,33 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Conteúdo: Bucket e todo conteúdo interno do bucket (/*)
 
 
+## Passo 46: Utilizando o S3 Glacier
+* o S3 Glacier foi criado para armazenamento de arquivos que não serão acessados por um longo período de tempo
+* Muitas empresas utilizam como uma origem de backup
+* Os objetos ficam armazenados no COLD D.C. (Data Center)
+* Possui um custo de transição de objeto (retrieval per object)
+* Existem 2 classes de arquivos/objetos dentro do S3 Glacier
+  - Glacier: Você paga barato ($$) e pode pedir o retriever dos objetos com uma quantidade de tempo menor
+  - Glacier Deep Archive: Você paga muito mais barato ($)
+* Existem 3 formas de se recuperar os arquivos:
+```bash
+  |------------------------------------------------------------|-----------------|----------------------|
+  |             Formas de recuperar arquivos                   |     Glacier     | Glacier Deep Archive |
+  |------------------------------------------------------------|-----------------|----------------------|
+  | Expedited | Acesso rápido (maior custo - $$$)              |   de 1 a 5 min  |       Não Tem        |
+  |------------------------------------------------------------|-----------------|----------------------|
+  | Standard  | Acesso mediano (médio custo - $$)              |  de 3 a 5 horas |       12 horas       |
+  |------------------------------------------------------------|-----------------|----------------------|
+  | Bulk      | Acesso demorado (baixo custo - $)              | de 5 a 12 horas |       48 horas       |
+  |------------------------------------------------------------|-----------------|----------------------|
+```
+* Existem 2 features que são habilitadas e vem com as classes Glacier e Glacier Deep Archive:
+  - S3 Object Lock
+  - S3 Glacier Vault Lock
+  - (Ninguém pode remover/alterar/mexer nesses arquivos por um determinado período de tempo: compliance, auditoria, etc)
 
+
+## Passo 47: AWS Storage Gateway
 
 
 
