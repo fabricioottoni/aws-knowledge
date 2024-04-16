@@ -826,6 +826,37 @@ Virtualization     Virtualization     Virtualization     Virtualization
                 |------| (etc)
   ```
 
+## Passo 45: Bucket Policies no S3
+* Permite ou bloqueia quem acessa o conteúdo de uma bucket aplicados diretamente/individualmente em uma bucket
+* Bucket Policies
+```bash
+{
+  "Version": "2012-10-27",
+  "Statement": [{
+    "Sid": "Allow",
+    "Effect": "Allow",
+    "Principal": {
+      "AWS": [
+        "arn:aws:iam:616161616161:root",
+        "arn:aws:iam:616161616161:user/jason"
+      ]
+    },
+    "Action": "s3:GetObject",
+    "Resource": "arn:aws:s3:::foobucket/*"
+  }]
+}
+```
+* Endentendo o bucket policies
+  - Bucket: foobucket
+  - Usuários: jason e root
+  - Ação: s3:GetObject
+  - Efeito: permitir
+  - Conteúdo: Bucket e todo conteúdo interno do bucket (/*)
+
+
+
+
+
 
 
 <h1 align="center">
