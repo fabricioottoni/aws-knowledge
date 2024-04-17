@@ -893,8 +893,8 @@ Virtualization     Virtualization     Virtualization     Virtualization
 * Utilizar a calculadora de preços da AWS para ver qto custará a solução.
 
 
-## Passo 48: AWS Storage Gateway
-
+## Passo 48: Introdução ao DNS (Domain Name System)
+* O DNS faz a tradução do nome do host/servidor para o número do IP/Endereço
 
 
 
