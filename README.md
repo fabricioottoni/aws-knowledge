@@ -895,7 +895,29 @@ Virtualization     Virtualization     Virtualization     Virtualization
 
 ## Passo 48: Introdução ao DNS (Domain Name System)
 * O DNS faz a tradução do nome do host/servidor para o número do IP/Endereço
-
+```bash
+                                                          |---------------|
+                                                  |------>|               |
+                                                  |       |   Root DNS    |  (1)
+                                                  |   |---|               |
+                                 |------------|   |   |   |---------------|
+                                 |            |---|   |
+                                 |            |       |
+                                 |   I S P    |<------|   |---------------|
+   |------|      DNS Query       |            |           |   Top Level   |
+   |  PC  |--------------------->|            |---------->|    Domain     |
+   |------|          |           |            |<----------|     .com      |  (2)
+  |--------|         |           |            |           |               |
+ |----------|        |           |   D N S    |<------|   |---------------|
+                     |           |   Server   |       |
+              www.google.com     |            |---|   |
+                                 |------------|   |   |   |---------------|
+                                                  |   |---|               |
+                                                  |       | Authoritative |
+                                                  |------>|    DYN DNS    |  (3)
+                                                          |               |
+                                                          |---------------|
+```
 
 
 
