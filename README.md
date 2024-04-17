@@ -882,8 +882,18 @@ Virtualization     Virtualization     Virtualization     Virtualization
 
 
 ## Passo 47: AWS Storage Gateway
+* É o serviço da AWS que vai permitir que os servidores OnPremisse acessem o storage da AWS (S3). Para manter a compatibilidade da sua estrutura com a AWS.
+* É considerado um sistema híbrido de armazenamento que vc armazena tanto na sua empresa quanto na cloud
+* Muito utilizado para backup
+* Possui um sistema de cache fantástico que habilita um recurso chamado LOW LATENCY para comunicação do OnPremisse com o S3
+* Em resumo a AWS te envia um equipamento chamado "Storage Gateway" que vc conecta na rede logal e ele acessa diretamente seu bucket. Esse equipamento pode ser utilizado de 3 formas:
+  - File Gateway: Utiliza o mesmo sistema de armazenamento do S3 se comportando igual ao S3
+  - Volume Gateway: Utiliza o mesmo sistema de armazenamento do S3 se comportando igual a um Block Storage
+  - Backup Gateway: Você escolhe o comportamento como file ou block storage
+* Utilizar a calculadora de preços da AWS para ver qto custará a solução.
 
 
+## Passo 48: AWS Storage Gateway
 
 
 
