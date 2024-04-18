@@ -918,7 +918,19 @@ Virtualization     Virtualization     Virtualization     Virtualization
                                                           |               |
                                                           |---------------|
 ```
+## Passo 49: O que é Route53
+* Ele não é apenas um DNS, é um DNS bombado, turbinado.
+* Se tiver 2 servidores de página web ele monitora os 2 e redireciona o tráfego para o que estiver no ar.
+* Faz o rotemanto das querys de DNS para o servidor mais próximo.
+* O Route 53:
+  - Armazena as Zonas Hospedadas
+  - Armazena os registros de redirecionamento para as zonas
+  - Armazena as regras de geo localização
+  - Possui outras regras e consultas de resolução de nomes
 
+
+## Passo 50: Como registrar o seu domínio
+* 
 
 
 
