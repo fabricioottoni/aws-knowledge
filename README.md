@@ -918,6 +918,8 @@ Virtualization     Virtualization     Virtualization     Virtualization
                                                           |               |
                                                           |---------------|
 ```
+
+
 ## Passo 49: O que é Route53
 * Ele não é apenas um DNS, é um DNS bombado, turbinado.
 * Se tiver 2 servidores de página web ele monitora os 2 e redireciona o tráfego para o que estiver no ar.
@@ -930,7 +932,22 @@ Virtualization     Virtualization     Virtualization     Virtualization
 
 
 ## Passo 50: Como registrar o seu domínio
+* Acessar o Route 53
+* No menu lateral acessar "Hosted Zones"
+* No menu lateral acessar "Registered Domain"
+  - Clicar em "Register Domain"
+  - Escolher um nome para o domínio: fabricioottoni.link
+  - Adicionar ao carrinho
+  - Clicar em "Continue"
+* Na próxima tela preencher os dados de contato
+  - Concordar com os termos
+  - Clicar em "Complete Order"
+* A ordem será enviada com cucesso
+* Receberá um email para verificar se o endereçamento de email está correto ou não em até 15 dias senão a solicitação será suspensa.
 * 
+
+
+
 
 
 
