@@ -944,10 +944,36 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Clicar em "Complete Order"
 * A ordem será enviada com cucesso
 * Receberá um email para verificar se o endereçamento de email está correto ou não em até 15 dias senão a solicitação será suspensa.
+
+
+## Passo 51: Diferença entre Scaling UP x Scaling Out (Escalabilidade preditiva)
 * 
 
 
+```bash
 
+                    UP                                                       OUT
+|----------------------------------------|               |----------------------------------------|
+|                                        | EC2           |                                        |
+|  |----------------------------------|  |               |  |----------------------------------|  | 
+|  |               APP                |  |               |  |               APP                |  |
+|  |----------------------------------|  |               |  |----------------------------------|  |
+|                                        |               |                                        |
+|  |----------------------------------|  |               |  |----------------------------------|  |
+|  |              Linux               |  |               |  |              Linux               |  | 
+|  |----------------------------------|  |               |  |----------------------------------|  | 
+|                                        |               |                                        | 
+|  |------| |------|  |------| |------|  |               |  |------| |------|  |------| |------|  | 
+|  | CPU  | | Disk |  |  ENI | | RAM  |  |               |  | CPU  | | Disk |  |  ENI | | RAM  |  |
+|  |------| |------|  |------| |------|  |               |  |------| |------|  |------| |------|  |
+|                                        |               |                                        |
+|----------------------------------------|               |----------------------------------------|
+|  Voce pode aumentar os recursos dessa  |               |  Você pode não apenas aumentar os      |
+|  VM, porém corre o risco dela falar e  |               |  recursos da VM como também duplicar,  |
+|  parar de atender com o serviço        |               |  triplicar as instâncias (+redundancia |
+|----------------------------------------|               |----------------------------------------|
+
+```
 
 
 
