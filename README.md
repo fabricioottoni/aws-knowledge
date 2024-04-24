@@ -947,9 +947,6 @@ Virtualization     Virtualization     Virtualization     Virtualization
 
 
 ## Passo 51: Diferença entre Scaling UP x Scaling Out (Escalabilidade preditiva)
-* 
-
-
 ```bash
 
                     UP                                                       OUT
@@ -975,7 +972,24 @@ Virtualization     Virtualization     Virtualization     Virtualization
 
 ```
 
+## Passo 52: EC2 Auto Scaling (Scaling OUT)
+* Permite criar de forma automática mais recursos para equilibrar a quantidade de acessos, procesamento e requisições.
+* 
+```bash
+                           EC2 Auto Scaling
 
+|--------------------------------|   |--------------------------------|
+|            Subnet - A          |   |            Subnet - B          |
+|--------------------------------|   |--------------------------------|
+|                                |   |                                |
+|  |-----------|  |-----------|  |   |  |-----------|  |-----------|  |
+|  | Instância |  | Instância |  |   |  | Instância |  | Instância |  |
+|  |    1A     |  |    1B     |  |   |  |    2A     |  |    2B     |  |
+|  |-----------|  |-----------|  |   |  |-----------|  |-----------|  |
+|                                |   |                                |
+|--------------------------------|   |--------------------------------|
+
+```
 
 
 
