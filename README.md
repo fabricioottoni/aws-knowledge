@@ -974,20 +974,27 @@ Virtualization     Virtualization     Virtualization     Virtualization
 
 ## Passo 52: EC2 Auto Scaling (Scaling OUT)
 * Permite criar de forma automática mais recursos para equilibrar a quantidade de acessos, procesamento e requisições.
-* 
+* É necessário criar um grupo chamado "Auto Scaling Group", onde srão escritos as regras.
+* Todo trabalho de monitoramento para verificar se rpecisa escalar ou não é feito pelo Amazon CloudWatch
 ```bash
-                           EC2 Auto Scaling
+                                     EC2 Auto Scaling
 
-|--------------------------------|   |--------------------------------|
-|            Subnet - A          |   |            Subnet - B          |
-|--------------------------------|   |--------------------------------|
-|                                |   |                                |
-|  |-----------|  |-----------|  |   |  |-----------|  |-----------|  |
-|  | Instância |  | Instância |  |   |  | Instância |  | Instância |  |
-|  |    1A     |  |    1B     |  |   |  |    2A     |  |    2B     |  |
-|  |-----------|  |-----------|  |   |  |-----------|  |-----------|  |
-|                                |   |                                |
-|--------------------------------|   |--------------------------------|
+|-----------------------------------|                |-----------------------------------|
+|             Subnet - A            |                |             Subnet - B            |
+|-----------------------------------|                |-----------------------------------|
+|  |----------------------------------------------------------------------------------|  |
+|  |  |-----------|  |-----------|  |                |  |-----------|  |-----------|  |  |
+|  |  | Instância |  | Instância |  |  Auto Scaling  |  | Instância |  | Instância |  |  |
+|  |  |    1A     |  |    1B     |  |     Group      |  |    2A     |  |    2B     |  |  |
+|  |  |-----|-----|  |-----|-----|  |                |  |-----|-----|  |-----|-----|  |  |
+|  |--------|--------------|----------------------------------|--------------|--------|  |
+|-----------|--------------|--------|                |--------|--------------|-----------|
+            |              |                                  |              |
+            |              |                                  |              |
+            |              |        |----------------|        |              |
+            |              |--------|     Amazon     |--------|              |
+            |-----------------------|   CloudWatch   |-----------------------|
+                                    |----------------|
 
 ```
 
