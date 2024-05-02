@@ -975,14 +975,18 @@ Virtualization     Virtualization     Virtualization     Virtualization
 ## Passo 52: EC2 Auto Scaling (Scaling OUT)
 * Permite criar de forma automática mais recursos para equilibrar a quantidade de acessos, procesamento e requisições.
 * É necessário criar um grupo chamado "Auto Scaling Group", onde srão escritos as regras.
-* Todo trabalho de monitoramento para verificar se rpecisa escalar ou não é feito pelo Amazon CloudWatch
+* Todo trabalho de monitoramento para verificar se precisa escalar ou não é feito pelo Amazon CloudWatch
+* O AutoScalling foi criado apenas para iniciar e terminar instâncias e acontece via performance
+* Basicamente quando se cria o Scalling Group tem que se criar uma mega instância chamada de Launch Template
 ```bash
                                      EC2 Auto Scaling
 
-|-----------------------------------|                |-----------------------------------|
-|             Subnet - A            |                |             Subnet - B            |
-|-----------------------------------|                |-----------------------------------|
-|  |----------------------------------------------------------------------------------|  |
+                                       |----------|
+                                       |   EC2    |
+|-----------------------------------|  |  Launch  |  |-----------------------------------|
+|             Subnet - A            |  | Template |  |             Subnet - B            |
+|-----------------------------------|  |-----|----|  |-----------------------------------|
+|  |-----------------------------------------|----------------------------------------|  |
 |  |  |-----------|  |-----------|  |                |  |-----------|  |-----------|  |  |
 |  |  | Instância |  | Instância |  |  Auto Scaling  |  | Instância |  | Instância |  |  |
 |  |  |    1A     |  |    1B     |  |     Group      |  |    2A     |  |    2B     |  |  |
@@ -995,8 +999,14 @@ Virtualization     Virtualization     Virtualization     Virtualization
             |              |--------|     Amazon     |--------|              |
             |-----------------------|   CloudWatch   |-----------------------|
                                     |----------------|
+                                    Performance Monitor
 
 ```
+
+## Passo 53: 
+
+
+
 
 
 
