@@ -1005,9 +1005,43 @@ Virtualization     Virtualization     Virtualization     Virtualization
 
 ## Passo 53: Criando um EC2 Auto Scaling
 * Acessar o painel EC2
-* Criar um EC2 - Modelo de execução
+* Em EC2 criar um Modelo de execução
+  - Nome do modelo: webserver-template
+  - Descrição da versão do modelo: 1.0
+  - Imagem de aplicação do sistema operacional: Procurar por lunux, escolher AMIs (Qualificado para nível gratuito)
+  - Tipo de instância: t2.micro (Qualificado para nível gratuito)
+  - Par de chaves: aws-server (utilizar a chave criada anteriormente)
+  - Configurações de rede: us-east-1a (Iniciar nessa zona, utilizando a subnet e a vpc)
+  - Grupo de segurança: web-ssh (criar um novo)
+  - Descrição do grupo de segurança: Permitir tráfego http e ssh (se tiver certificado colocar - https)
+  - Regras do grupo de segurança (adicionar):
+    * ssh: Origem -> 0.0.0.0/0 (qualquer lugar)
+    * http: Origem -> 0.0.0.0/0 (qualquer lugar)
+    * https: Origem -> 0.0.0.0/0 (qualquer lugar)
+  - Configurar armazenamento:
+    * 1x de 8 GiB gp2
+  - Detalhes avançados:
+    * Em "Dados de Usuário" colocar um código de script que executará as seguintes ações:
+      - Atualizar a versão de linux
+      - Instalar o serviço de web server
+      - Iniciar o serviço de webserver
+      - Habilitar o serviço de web server
+      - Criar uma variável para armazenar informações sobre a zona de disponibilidade
+      - Enviar a informação para a apágina da web em forma de um arquivo *.txt
+      - O arquivo *.txt se transformará em um arquivo *.html
+        ```bash
+	#!/binbash
+	yum update -y
+	yum install -y httpd
+	systemctl start httpd
+	systemctl enable httpd
+	EC2AZ=$(curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone)
+	echo '<center><h1>Esta EC2 esta na Zona: AZID </h1></center>' > /var/www/html/index.txt
+	sed "s/AZID/$EC2AZ/" /var/www/html/index.txt > /var/www/html/index.html
+        ```
+  - Criar modelo de execução
 * Criar um grupo de Auto Scaling
-  
+
 ```bash
                                                           AUTO SCALING                                                                                        
                                                                                                                                          US-EAST-1
