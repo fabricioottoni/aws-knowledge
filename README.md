@@ -1005,7 +1005,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
 
 ## Passo 53: Criando um EC2 Auto Scaling
 * Acessar o painel EC2
-* Em EC2 criar um Modelo de execução
+* Em EC2 > Modelo de execução - Criar um modelo de execução
   - Nome do modelo: webserver-template
   - Descrição da versão do modelo: 1.0
   - Imagem de aplicação do sistema operacional: Procurar por lunux, escolher AMIs (Qualificado para nível gratuito)
@@ -1030,6 +1030,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
       - Enviar a informação para a apágina da web em forma de um arquivo *.txt
       - O arquivo *.txt se transformará em um arquivo *.html
         ```bash
+
 	#!/binbash
 	yum update -y
 	yum install -y httpd
@@ -1038,10 +1039,36 @@ Virtualization     Virtualization     Virtualization     Virtualization
 	EC2AZ=$(curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone)
 	echo '<center><h1>Esta EC2 esta na Zona: AZID </h1></center>' > /var/www/html/index.txt
 	sed "s/AZID/$EC2AZ/" /var/www/html/index.txt > /var/www/html/index.html
+
         ```
   - Criar modelo de execução
-* Criar um grupo de Auto Scaling
-
+* Em EC2 > Grupo de Auto Scaling - Criar um grupo de auto scaling
+  - Nome do grupo de auto scaling: webservers-AS
+  - Modelo de execução: webserver_template
+  - Próximo (Rede)
+  - Qual VPC será utilizada: padrão da região
+  - Escolher em quais zonas de disponibilidades e sub-redes as instancias serão criadas
+    * us-east-1a, us-east-1b, us-east-1c
+  - Próximo (Configurar opções avançadas)
+  - Balanceamanto de carga
+    * Nenhum load balancer (a princípio)
+  - Configurações adicionais
+    * Habiliter coleta de métricas
+  - Próximo (Configurar políticas de escalabilidade e tamanho do grupo)
+  - Tamanho do grupo
+    * Capacidade desejada: 3 (Iniciar com 3 instâncias)
+    * Capacidade Mínima: 3 (Ter no mínimo 3 instâncias)
+    * Capacidade Máxima: 6 (Ter no máximo 6 instâncias)
+  - Políticas de escalabilidade
+    * Nenhuma
+  - Próximo (Adicionar notificações)
+    * Se quiser adicionar notificações SNS no email ou celular
+  - Próximo (Adicionar tags)
+    * Nenhuma por enquanto
+  - Próximo (Análise)
+    * Revisar tudo
+  - Criar grupo do Auto Scaling
+  
 ```bash
                                                           AUTO SCALING                                                                                        
                                                                                                                                          US-EAST-1
