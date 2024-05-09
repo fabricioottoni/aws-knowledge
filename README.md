@@ -1008,7 +1008,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
 * Em EC2 > Modelo de execução - Criar um modelo de execução
   - Nome do modelo: webserver-template
   - Descrição da versão do modelo: 1.0
-  - Imagem de aplicação do sistema operacional: Procurar por lunux, escolher AMIs (Qualificado para nível gratuito)
+  - Imagem de aplicação do sistema operacional: Procurar por linux, escolher AMIs (Qualificado para nível gratuito)
   - Tipo de instância: t2.micro (Qualificado para nível gratuito)
   - Par de chaves: aws-server (utilizar a chave criada anteriormente)
   - Configurações de rede: us-east-1a (Iniciar nessa zona, utilizando a subnet e a vpc)
@@ -1031,7 +1031,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
       - O arquivo *.txt se transformará em um arquivo *.html
         ```bash
 
-	#!/binbash
+	#!/bin/bash
 	yum update -y
 	yum install -y httpd
 	systemctl start httpd
@@ -1068,6 +1068,9 @@ Virtualization     Virtualization     Virtualization     Virtualization
   - Próximo (Análise)
     * Revisar tudo
   - Criar grupo do Auto Scaling
+  - Abrir o Auto Scaling e em "Atividades" Visualizar a execução
+  - Em EC2 "Instâncias" verificar se as 3 foram/estão sendo criadas
+  - Pegar o endereço público de todas as instancias e verificar se o script do index.html deu certo
   
 ```bash
                                                           AUTO SCALING                                                                                        
