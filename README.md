@@ -1101,7 +1101,7 @@ Virtualization     Virtualization     Virtualization     Virtualization
                                                                                                                     
                                                                                                                     
 ```
-## Passo 54: Introdução ao Load Balancer
+## Passo 54: Introdução ao Elastic Load Balancer (ELB)
 * Faz a distribuição de carga entre a regiões da AWS
 * Previne contra instâncias com falha
 * Combinado com Auto Scaling as instâncias são restauradas/criadas
@@ -1136,7 +1136,27 @@ www.empresa.com
                                                                                                                     
 ```
 
+## Passo 55: Tipos Load Balancers
+* Existem 2 tipos de Load Balancers extremamente importantes e eficientes
+  - ALB (Application Load Balancer): Camada 7 (Aplication Layer do módulo OSI ) (OSI = Open Systems Interconnection), consegue perceber e fazer o roteamento baseado em "Path-Based" e "host-based":
+    * Path-Based:
+      - www.empresa.com/eventos -> direciona pra eventos
+      - www.empresa.com/picture -> direciona pra pictures
+    * Host-Based:
+      - www.empresa.com -> direciona para máquinas específicas
+      - cursos.empresa.com -> direciona para outras máquinas espeíficas
+      - <ip> -> direciona para máquinas específicas
+    * Os ALBs conseguem apontar/direcionar para:
+      - Instâncias
+      - IP address
+      - Lambda
+      - Containers
+      - Targets
+  - NLB (Network Load Balarcer): Camada 4 (Transport Layer), consegue fazer o roteamento baseado em IP, TCP/UDP
+* Para um roteamento mais detalhado/inteligente utilizar o ALB já um roteamento mais rápido e mais simnples utilizar um NLB (Aplicações de high performance + low latency).
 
+
+## Passo 56: 
 
 
 
