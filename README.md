@@ -1156,7 +1156,11 @@ www.empresa.com
 * Para um roteamento mais detalhado/inteligente utilizar o ALB já um roteamento mais rápido e mais simnples utilizar um NLB (Aplicações de high performance + low latency).
 
 
-## Passo 56: 
+## Passo 56: Políticas de Escalonamento para Instâncias EC2
+* Quando você tem um autoscaling configurado você quer ter a certeza que seu servidor EC2 ao chegar em uma determinada porcentagem seja criada uma nova instância, é o famoso Auto Scaling.
+* Existe 2 tipos de Scaling Policies
+  - Target Tracksing: Ao configurar a regra de 70% de consumo para iniciar outra instância quando a outra for iniciada eles vão dividir a carga, 35% para cada um. Mas se você tem um tráfego muito grando pode ocorrer picos de sobrecarga e fazer com que o Auto Scaling fique iniciando novas instâncias a cada 70% de pico. Isso pode gerar uma instabilidade na aplicação.
+  - Step/Simple Scaling: É mais sensitivo e esperto, utiliza o monitoramento e os alertas do cloudwatch para entender se deve ou não iniciar uma nova instância. 
 
 
 
