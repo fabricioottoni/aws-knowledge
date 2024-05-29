@@ -1163,8 +1163,14 @@ www.empresa.com
   - Step/Simple Scaling: É mais sensitivo e esperto, utiliza o monitoramento e os alertas do cloudwatch para entender se deve ou não iniciar uma nova instância. 
 
 
-
-
+## Passo 57: Introdução a Billing
+* O cliente sempre está em primeiro lugar
+* Proteja seu cliente que você acaba protegendo a si memo
+* AWS filosofia de pagamento:
+  - Pay as you Go: Paga de acordo com o que você configurou no final do mês (on demand)
+  - Pay as you Use (cobra por: compute, storage e transfer out): Se você desliga instâncias elas não são cobradas. Agendar OFF e On dos serviços
+  - Pay less as you more: Pague menos porquanto mais você utiliza.
+  - Pay even less as you reserved: Sempre paga pela máquina porém com um preço menor.
 
 
 
