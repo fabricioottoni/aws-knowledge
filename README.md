@@ -1167,12 +1167,17 @@ www.empresa.com
 * O cliente sempre está em primeiro lugar
 * Proteja seu cliente que você acaba protegendo a si memo
 * AWS filosofia de pagamento:
-  - Pay as you Go: Paga de acordo com o que você configurou no final do mês (on demand)
+  - Pay as you Go(Opex): Paga de acordo com o que você configurou no final do mês (on demand)
   - Pay as you Use (cobra por: compute, storage e transfer out): Se você desliga instâncias elas não são cobradas. Agendar OFF e On dos serviços
   - Pay less as you more: Pague menos porquanto mais você utiliza.
-  - Pay even less as you reserved: Sempre paga pela máquina porém com um preço menor.
+  - Pay even less as you reserved (Capex): Sempre paga pela máquina porém com um preço menor. (Mais utilizado qdo necessita de alta disponibilidade)
+* Capex x Opex: Identifica o que é a AWS
+  - Capex (Capital Expenditure): Você paga antes de utilizar. É um valor fixo muito mais caro.
+  - Opex (Operational Expenditure): Você paga de acordo com o que utiliza. A AWS utiliza esse modo normalment
 
 
+## Passo 58: Budget x Cost Explorer
+* 
 
 
 
