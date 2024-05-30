@@ -1177,7 +1177,16 @@ www.empresa.com
 
 
 ## Passo 58: Budget x Cost Explorer
-* 
+* Budget (Orçamento): Criar alertas
+* Cost Explorer (Relatório de Billing): Melhor lugar para visualizar em mínimos detalhes o que você está gastando.
+* Acessar My Billing Dashboard: Nessa sessão você terá acesso a muitas ferramentas de orçamento e visualização dos custos.
+
+
+
+
+
+
+
 
 
 
