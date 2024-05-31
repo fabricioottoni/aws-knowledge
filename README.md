@@ -1182,6 +1182,11 @@ www.empresa.com
 * Acessar My Billing Dashboard: Nessa sessão você terá acesso a muitas ferramentas de orçamento e visualização dos custos.
 
 
+## Passo 59: Tipos de suporte/planos AWS
+* Basic Plan (Free): Conta para estudo ou teste. Não tem acesso a suporte, apenas a documentação e algum serviços self-service.
+* Developer Plan (29$/Mês): Tem acesso ao sistema de "email access to AWS Support during business hours", 12h de SLA.
+* Business Plan (100$+/Mês): 24/7 chat, telefone e email support. 1h de SLA.
+* Enterprise Plan (Exclusivo)(15.000$/Mês): Tem um gerente de conta exclusivo
 
 
 
