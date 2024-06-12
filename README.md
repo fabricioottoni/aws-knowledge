@@ -1189,6 +1189,7 @@ www.empresa.com
 * Enterprise Plan (Exclusivo)(15.000$/Mês): Tem um gerente de conta exclusivo
 
 
+## Passo 60: AWS Organizations
 
 
 
