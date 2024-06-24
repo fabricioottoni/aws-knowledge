@@ -1198,6 +1198,9 @@ www.empresa.com
 * Identifica ou define o custo de um recurso AWS.
 
 
+## Passo 62: AWS Compliance
+*
+
 
 
 
