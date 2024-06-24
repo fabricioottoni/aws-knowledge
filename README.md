@@ -1195,7 +1195,7 @@ www.empresa.com
 * Cria-se também as policies, defininso-se as máquinas por organização/ambiente, tipos de recursos a serem utilizados, etc.
 
 ## Passo 61: AWS Cost Calculator
-* 
+* Identifica ou define o custo de um recurso AWS.
 
 
 
