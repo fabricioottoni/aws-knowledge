@@ -1194,6 +1194,9 @@ www.empresa.com
 * Cria-se as organizações (dev,test,prod) e se convida as pessoas para participarem e utilizarem.
 * Cria-se também as policies, defininso-se as máquinas por organização/ambiente, tipos de recursos a serem utilizados, etc.
 
+## Passo 61: AWS Cost Calculator
+* 
+
 
 
 
