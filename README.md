@@ -1199,7 +1199,8 @@ www.empresa.com
 
 
 ## Passo 62: AWS Compliance
-*
+* Significa conformidade com o programa de conformidade. Todas as certificações globais e regionais que a AWS tem desde 2006.
+* ISO9001, ISO27001, ISO27017, ISO27018, PCI DSS level 1, 
 
 
 
