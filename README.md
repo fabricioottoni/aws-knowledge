@@ -1198,9 +1198,12 @@ www.empresa.com
 * Identifica ou define o custo de um recurso AWS.
 
 
-## Passo 62: AWS Compliance
+## Passo 62: AWS Compliance & AWS Artifact
 * Significa conformidade com o programa de conformidade. Todas as certificações globais e regionais que a AWS tem desde 2006.
-* ISO9001, ISO27001, ISO27017, ISO27018, PCI DSS level 1, 
+* ISO9001, ISO27001, ISO27017, ISO27018, PCI DSS level 1
+* Dentro de Security Identity & Compliance > Artifact: Local onde a AWS armazena os agreements e os reports:
+  - Agreements : São os controles/acordos com os órgãos
+  - Reports : O que precisa fazer para se tornar um certificado ou uma empresa ser ISO9????.
 
 
 
