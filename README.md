@@ -1204,7 +1204,30 @@ www.empresa.com
 * Dentro de Security Identity & Compliance > Artifact: Local onde a AWS armazena os agreements e os reports:
   - Agreements : São os controles/acordos com os órgãos
   - Reports : O que precisa fazer para se tornar um certificado ou uma empresa ser ISO9????.
-* o AWS Artifact é umportal de autoatendimento para recuperação de artefatos de auditoria que oferece aos clientes acesso sob demanda à documentação de conformidade e aos acordos da AWS.
+* o AWS Artifact é um portal de autoatendimento para recuperação de artefatos de auditoria que oferece aos clientes acesso sob demanda à documentação de conformidade e aos acordos da AWS.
+
+## Passo 63: Modelo de responsabilidade
+```bash
+
+|-----------------------|
+|                       |
+|       Customer        |
+|                       |
+|  Responsável pela     |
+|  segurança "interna"  |
+|  da cloud.            |
+|                       |
+|-----------------------|
+|                       |
+|         AWS           |
+|                       |
+|  Responsável pela     |
+|  segurança "externa"  |
+|  da cloud.            |
+|                       |
+|-----------------------|
+
+```
 
 
 
