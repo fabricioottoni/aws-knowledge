@@ -1209,17 +1209,19 @@ www.empresa.com
 ## Passo 63: Modelo de responsabilidade
 ```bash
 
-|-----------------------|
+|-----------------------|--------------------------------------------------------------|
+|                       | Dados do cliente                                             |
+|       Customer        |--------------------------------------------------------------|
+|                       | Plataforma, Aplicações, Identidade e gerencimaneto de acesso |
+|                       |--------------------------------------------------------------|
+|  Responsável pela     | Sistema Operacional, configuração de rede e firewall         |
+|  segurança "interna"  |--------------------------------------------------------------|
+|  da cloud.            | Dados client-side, Autenticação,                             |
+|                       | Integridade dos dados                                        |
+|-----------------------|--------------------------------------------------------------|
 |                       |
-|       Customer        |
+|          AWS          |
 |                       |
-|  Responsável pela     |
-|  segurança "interna"  |
-|  da cloud.            |
-|                       |
-|-----------------------|
-|                       |
-|         AWS           |
 |                       |
 |  Responsável pela     |
 |  segurança "externa"  |
