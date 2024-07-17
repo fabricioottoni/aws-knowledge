@@ -1219,19 +1219,21 @@ www.empresa.com
 |  da cloud.            | Dados client-side, Autenticação,                             |
 |                       | Integridade dos dados                                        |
 |-----------------------|--------------------------------------------------------------|
-|                       |
-|          AWS          |
-|                       |
-|                       |
-|  Responsável pela     |
-|  segurança "externa"  |
-|  da cloud.            |
-|                       |
-|-----------------------|
+|                       | Software                                                     |
+|          AWS          |--------------------------------------------------------------|
+|                       |    Compute    |    Storage    |   Database   |  Networking   |
+|                       |--------------------------------------------------------------|
+|  Responsável pela     | Hardware / AWS Global Infrastructure                         |
+|  segurança "externa"  |--------------------------------------------------------------|
+|  da cloud.            |   Regions   |   Availability Zones    |    Edge Locations    |
+|                       |             |                         |                      |
+|-----------------------|--------------------------------------------------------------|
 
 ```
 
-
+## Passo 64: AWS WAF e AWS Shield
+* AWS WAF : Web Application Firewall : Atua na camada 7 de infraestrutura e controla o tráfego evitando atques nas portas.
+* AWS AWS Shield : Atua na camada interna de dados e aplicações evitando ataques DDOS.
 
 
 
