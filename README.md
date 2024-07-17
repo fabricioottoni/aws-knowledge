@@ -1236,6 +1236,10 @@ www.empresa.com
 * AWS AWS Shield : Atua na camada interna de dados e aplicações evitando ataques DDOS.
 
 
+## Passo 65: AWS Security Services - AWS Inspector, AWS Trusted Advisor e CloudTrail
+* AWS Inspector : É um agente que monitora nas instâncias EC2 todo ambiente como patches de segurança, atualizações e boas práticas de toda sua infra.
+* AWS Trusted Advisor : Trabalha em tempo real e ajuda a identiicar sua estrutura AWS por completo ajudando a identificar falas e sugere adaptações e otimizações.
+* AWS CloudTrail : Tem como objetivo monitorar tudo que passa de API Calls ou AWS Console mostrando todo o log de acessos.
 
 
 
