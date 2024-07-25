@@ -4,6 +4,9 @@ Repo para armazenar os resumos e estudos para certificação aws
 # Login
 https://933248616516.signin.aws.amazon.com/console
 
+# link para exames:
+  - AWS Certified Cloud Practitioner CLF-C01 Exam Questions 2023 - https://www.udemy.com/course/simulado-aws-certified-cloud-practitioner/?referralCode=176F63D7ACAF8F07B8A3
+  
 # Tipos de Cloud Computing
   - On-site : (On-premisse) Todo recurso computacional está alocado dentro do cliente
   - IaaS : Infrastructure as a Service
